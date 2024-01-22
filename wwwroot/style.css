@@ -157,3 +157,104 @@
     color: blue;
     border-radius:5px;
 }
+
+
+
+/* ----------------------ADMIN--------------- */
+
+
+/* 
+#dashtab{
+    position:absolute;
+    top:10rem;
+    left:0;
+    border: none;
+    width:85%;
+}
+.mud-tooltip-root{
+    width:20rem;
+}
+.mud-tabs-toolbar{
+    background:#05488D;
+    position:absolute;
+    height:60.2rem;
+    top:-6rem;
+    
+}
+.mud-tab{
+    color:white;
+}
+.mud-tab:hover{
+    background: #1667BA;
+}
+.mud-tabs-toolbar-inner{
+    margin-top:5rem;
+}
+.mud-tab.mud-tab-active{
+    color:white;
+    font-weight: bold;
+    background: #1667BA;
+    
+}
+
+.mud-tab-slider{
+    background: none;
+}
+
+.mud-tabs-panels{
+    position: absolute;
+    left: 22rem;
+    width: 90rem;
+    top:-5.5rem;
+    p{
+        width:90rem;
+    }
+} */
+
+.titledash p{
+    font-size:2rem;
+    font-weight:bold;
+    color:#05488D;
+}
+
+.dashcontent{
+    display:flex;
+    align-items:center;
+    justify-content: start;
+  
+    width:10rem;
+    position:relative;
+    padding-top:2rem;
+    
+}
+
+.dashcontent .apply p, .profile p{
+    color:white;
+    font-size:2rem;
+    width:27rem;
+}
+.dashcontent .apply i, .profile i{
+    padding-right:1rem;
+}
+/* .dashcontent .apply{
+    margin-left:10rem;
+    top: 2rem;
+    background:green;
+    width:18rem;
+    padding:1rem 4rem;
+   
+} */
+.apply, .profile{
+    background:green;
+    padding-top:2rem;
+    margin-left:20rem;
+}
+.apply p, .profile p{
+    text-align:center;
+    
+}
+#num{
+    text-align:center;
+    color:yellow;
+    font-size:6rem;
+}
