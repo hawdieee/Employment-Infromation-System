@@ -1,0 +1,302 @@
+@page "/EmployerJob"
+
+<PageTitle>Employer/Post Job</PageTitle>
+
+<div class ="Employer-Page">
+    <div class="employer__title d-flex justify-space-between align-center" style="margin-bottom: 1rem;">
+        <h1 style="font-size: 2.5rem; color: #2A0000;">Employer/Post Job</h1>
+        <MudImage Src="Images/Employerlogo.png" Width="250" Height="70"/>
+    </div>
+    
+    <MudTabs Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+
+        @* -----SIGN UP/REGISTER-----*@
+        <MudTabPanel Text="1" Style="place-contents: center; display: flex;">
+            <MudText style="margin-left: 13.2rem; color: #05488D; font-weight: 800;">Sign Up/Register</MudText>
+            <div>
+                <h1 style="font-size: 2rem; color: #2A0000; padding-top: 2rem;">Register as an Employer Account</h1>
+                <h1 style="font-size: 1.5rem; color: #05488D; font-weight: 500;">Elevate Your Experience: Register for an Account</h1>
+            </div>
+            <MudGrid>
+                <MudItem xs="6">
+                    <MudPaper Class="mud-width-full py-8 px-2" ><h1 style="font-size: 1.8rem;">Account Information</h1>
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem;">Email Address *</h1>
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="EmailAccount"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem; margin-top: 1rem;">Password *</h1>
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Pass"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem; margin-top: 1rem;">Confirm   Password *</h1>
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="ConfirmPass"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                        <div class="d-flex gap-4" style="place-content: center; margin-top: 10rem;">
+                                        <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #05488D; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Next</p></MudButton>
+                                        <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #027F28; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Cancel</p></MudButton>
+                        </div>
+                    </MudPaper>
+                </MudItem>
+                <MudItem xs="6">
+                    <div id="unique_id_scroll_section" class="ma-0" style="height:600px;overflow: auto;">
+                        <MudPaper Height="800px" Class="d-flex flex-column justify-space-between py-8 px-2">
+                            <MudText Typo="Typo.h3">
+                                <h1 style="font-size: 1.8rem;">Employer Information</h1>
+                                    <div class="px-6" style="margin-top: .8rem;">
+                                        <h1 style="font-size: 1.2rem;">Name of Company *</h1>
+                                        <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="NameofCompany"  Variant="Variant.Outlined"></MudTextField></div>
+                                    </div>
+                                    <div class="px-6">
+                                        <h1 style="font-size: 1.2rem; margin-top: 1rem;">Type of Company *</h1>
+                                        <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="TypeCompany"  Variant="Variant.Outlined"></MudTextField></div>
+                                    </div>
+                                    <div class="px-6">
+                                        <h1 style="font-size: 1.2rem; margin-top: 1rem;">Nature of Company *</h1>
+                                        <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="NatureCompany"  Variant="Variant.Outlined"></MudTextField></div>
+                                    </div>
+                                    <div class="px-6 d-flex gap-10">
+                                        <div style="width: 70%;">
+                                            <h1 style="font-size: 1.2rem; margin-top: 1rem;">Email Address *</h1>
+                                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="EmployerEmail"  Variant="Variant.Outlined" ></MudTextField></div>
+                                        </div>
+                                        <div>
+                                            <h1 style="font-size: 1.2rem; margin-top: 1rem;">Contact Number *</h1>
+                                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Contact"  Variant="Variant.Outlined"></MudTextField></div>
+                                        </div>
+                                    </div>
+                                    <div class="px-6">
+                                        <h1 style="font-size: 1.2rem; margin-top: 1rem;">Upload Partnership Documents *</h1>
+                                        <div class="resume__content" style="padding-bottom: 2rem;">
+                                            <div class="border border-solid mud-border-dark pa-4 rounded" style="text-align:center; width: 70%; margin: 0 auto; margin-top: 1rem;">
+                                                <p class="border border-solid mud-border-dark pa-4 rounded my-2" style="width: 80%; margin: 0 auto; font-size: 1rem; ">Choose File</p>
+                                                <div class="mt-4 d-flex gap-4" style="place-content: center;">
+                                                    <MudButton Variant="Variant.Filled" Color="Color.Info"  Size="Size.Medium" Style="background-color: #05488D; color: white; border-radius: 10rem; padding: .5rem 2rem;">Browse</MudButton>
+                                                    <MudButton Variant="Variant.Filled" Color="Color.Info"  Size="Size.Medium" Style="background-color: #027F28; color: white; border-radius: 10rem;padding: .5rem 2rem;">Upload</MudButton>
+                                                </div>
+                                            </div>
+                                            <div style ="margin-top: 2rem;">
+                                                <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #05488D; color: white; border-radius: .5rem; padding: .5rem 8rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Register Employer Account</p></MudButton>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </MudText>
+                        </MudPaper>
+                    </div>
+                </MudItem>
+        </MudGrid> 
+        </MudTabPanel>
+
+        @* -----LOGIN-----*@
+        <MudTabPanel Text="2">
+            <MudText Style="margin-left: 26rem; color: #05488D; font-weight: 800;">Login</MudText>
+             <div>
+                <h1 style="font-size: 2rem; color: #2A0000; padding-top: 2rem;">Sign In</h1>
+                    <div style="width: 40%; margin: 0 auto; margin-top: 2rem;">
+                        <div class="" style="">
+                            <h1 style="font-size: 1.2rem;">Email Address *</h1>
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Signin"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                        <div>
+                                <h1 style="font-size: 1.2rem; margin-top: 1rem;">Password *</h1>
+                                <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="SignInPass"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #027F28; color: white; border-radius: .5rem; padding: .5rem 8rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Sign in</p></MudButton>
+                    </div>
+                         <p style="text-align: center; margin-top: 1rem; font-weight: 800;">Don't have an Account?<span style="color:#05488D; text-decoration: underline;"> Register</span></p>
+
+                    <div class="d-flex gap-4" style="place-content: center; margin-top: 5rem;">
+                                        <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #05488D; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Next</p></MudButton>
+                                        <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #027F28; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Cancel</p></MudButton>
+                    </div>
+            </div>
+        </MudTabPanel>
+
+        @* -----CREATE JOB AD-----*@
+        <MudTabPanel Text="3">
+            <MudText Style="margin-left: 34rem; color: #05488D; font-weight: 800;">Create Job ad</MudText>
+            <div>
+                <h1 style="font-size: 2rem; color: #2A0000; padding-top: 2rem;">Create Job ad</h1>
+            </div>
+            <MudGrid>
+                <MudItem xs="6">
+                    <MudPaper Class="mud-width-full py-8 px-2"><h1 style="font-size: 1.5rem;">Role Information</h1>
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem; color: #05488D; margin-top: 1rem;">Job Title *</h1>
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Jobtitle"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D">Qualification *</h1>
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Qualification1"  Variant="Variant.Outlined"></MudTextField></div>
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Qualification2"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D">Experience *</h1>
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Experience"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D">Location of Deployment *</h1>
+                            <MudSelect T="string" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter" Style="background-color: rgba(5, 72, 141, 0.25); ">
+                                <MudSelectItem Value="@("Laguna")" />
+                                <MudSelectItem Value="@("Philippines")" />
+                                <MudSelectItem Value="@("Canada")" />
+                            </MudSelect>
+                                @code {
+                                    public class Pizza
+                                    {
+                                        public Pizza(string name)
+                                        {
+                                            Name = name;
+                                        }
+
+                                        public readonly string Name;
+
+                                        // Note: this is important so the MudSelect can compare pizzas
+                                        public override bool Equals(object o)
+                                        {
+                                            var other = o as Pizza;
+                                            return other?.Name == Name;
+                                        }
+
+                                        // Note: this is important too!
+                                        public override int GetHashCode() => Name?.GetHashCode() ?? 0;
+
+                                        // Implement this for the Pizza to display correctly in MudSelect
+                                        public override string ToString() => Name;
+                                    }
+                                }
+                        </div>
+                    </MudPaper>
+                </MudItem>
+
+                <MudItem xs="6">
+                    <MudPaper Class="mud-width-full py-8 px-2">
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D; margin-top: 3.1rem;">Work Type *</h1>
+                            <MudRadioGroup T="int" style="">
+                                <div>
+                                    <MudRadio Option="1" Color="Color.Primary" UnCheckedColor="Color.Default">Full time</MudRadio>
+                                </div>
+                                <div>
+                                    <MudRadio Option="2" Color="Color.Primary" UnCheckedColor="Color.Default">Part time</MudRadio>
+                                </div>
+                                <div>
+                                    <MudRadio Option="3" Color="Color.Primary" UnCheckedColor="Color.Default">Contract</MudRadio>
+                                </div>
+                        </MudRadioGroup>
+                        </div>
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D">Show case your brand *</h1>
+                            <p style="color: #000000; margin-left: 1rem; font-weight: 400;">Create your first brand by uploading your company logo.</p>
+                                
+                            
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Show"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                        <div class="Jobdes px-6">
+                            <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D">Job Description *</h1>
+                                <p style="color: #000000; margin-left: 1rem;">Enter your job details or let us guide you through what to write.</p>
+                            
+                            <textarea rows='1'></textarea>
+                        </div>
+                    </MudPaper>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">
+                        <div class="d-flex gap-4" style="place-content: center;">
+                                    <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #05488D; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Next</p></MudButton>
+                                    <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #027F28; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Cancel</p></MudButton>
+                         </div>
+                    </MudPaper>
+                </MudItem>
+        </MudGrid>
+        </MudTabPanel>
+
+        @* -----PUBLISH-----*@
+        <MudTabPanel Text="4">
+            <MudText Style="margin-left: 45.5rem; color: #05488D; font-weight: 800;">Publish</MudText>
+            <div>
+                <h1 style="font-size: 2rem; color: #2A0000; padding-top: 2rem;">Publish</h1>
+                <div style="width: 70%; margin: 0 auto; padding: 1rem; background-color: #05488D; color: white;">
+                    <div class="d-flex gap-3" style="align-items: center;">
+                        <div style="padding: 1rem; background-color: white; height: 7rem;">
+                                <MudImage Src="Images/Company-Logo.png" Width="100" Height="80"/>
+                        </div>
+                        <div>
+                            <h1>Software Engineer</h1>
+                            <p style="font-size: 1.2rem;">Accenture</p>
+                            <p style="font-size: 1.2rem;">Pasig City</p>
+                            <p style="font-size: 1.2rem;">Full Time</p>
+                        </div>
+                    </div>
+                    <div style="margin-left: .5rem;">
+                        <div style="margin-top: 1.5rem;">
+                            <h2>Job Descriptions</h2> 
+                            <p style="margin-left: 2rem; max-width: 45rem; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis est dui, vitae convallis sem fringilla quis. Nullam lobortis facilisis tincidunt. In malesuada nunc est, sit amet mattis eros vehicula id. Phasellus vel lectus eros. Nam pharetra vitae ligula eget cursus. Curabitur lobortis nisl mauris, convallis finibus mi faucibus id. Duis vel felis convallis, commodo ipsum non, finibus quam.</p> 
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <h2>Qualifications</h2> 
+                            <ul style="list-style-type: circle; margin-left: 3rem;">
+                                <li>Bachelor of Computer science or related</li>
+                                <li>Proficiency in HTML, CSS </li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 1rem; margin-bottom: 2rem;" >
+                            <h2>Experience</h2> 
+                            <ul style="list-style-type: circle; margin-left: 3rem;">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Vtae convallis sem fringilla quis. Nullam lobortis facilisis tincidunt. </li>
+                                <li>In malesuada nunc est, sit amet mattis eros vehicula id. </li>
+                                <li>mmodo ipsum non, finibus quam.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                        <div class="d-flex" style="place-content: center; margin-top: 1rem; padding: 2rem;">
+                                <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #027F28; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Publish</p></MudButton>
+                        </div>
+            </div>
+        </MudTabPanel>
+
+        @* -----COMPLETED-----*@
+        <MudTabPanel Text="5">
+            <MudText Style="margin-left: 54.7rem; color: #05488D; font-weight: 800;">Completed</MudText>
+            <div>
+                <h1 style="font-size: 2rem; color: #2A0000; padding-top: 2rem;">Completed</h1>
+                <div style="width: 40%; margin: 0 auto; padding: 1rem; background-color: #05488D; color: white; border-radius: 1rem; margin-top: 5rem;">
+                    <div class="" style="text-align: center;  padding: 6rem;">
+                        <h3 style="margin-bottom: 1rem;">Thankyou!</h3>
+                        <div style="display: flex; width: 150%; gap: 1rem;">
+                            <h1>Your Job Is Posted</h1>
+                            <MudImage Src="Images/partypopper.png"></MudImage>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </MudTabPanel>
+     
+    </MudTabs>
+</div>
+
+@code {
+    public string TextValue4 { get; set; }
+    public string EmailAccount { get; set; }
+    public string Pass { get; set; }
+    public string ConfirmPass { get; set; }
+    public string NameofCompany { get; set; }
+    public string TypeCompany { get; set; }
+    public string NatureCompany { get; set; }
+    public string EmployerEmail { get; set; }
+    public string Contact { get; set; }
+    public string Signin { get; set; }
+    public string SignInPass { get; set; }
+    public string Jobtitle{ get; set; }
+    public string Qualification1{ get; set; }
+    public string Qualification2{ get; set; }
+    public string Experience{ get; set; }
+    public string Show{ get; set; }
+}
+
+<script src="script.js"></script>
