@@ -157,3 +157,51 @@
     color: blue;
     border-radius:5px;
 }
+
+---Header Button---
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Style the active class (and buttons on mouse-over) */
+  .active, .btn:hover {
+    background-color: #05488D;
+    color: white;
+  }
+  .mud-tabs-toolbar-content{
+    place-content: center;
+    display: flex;
+  }
+  .mud-input>input.mud-input-root-outlined{
+   color: black;
+   z-index: 1;
+  }
+
+  .mud-elevation-1{
+    box-shadow: none;
+  }
+
+  /* Job Description text area*/
+  .Jobdes textarea{  
+    /* box-sizing: padding-box; */
+    overflow:hidden;
+    /* demo only: */
+    padding:1rem;
+    width:515px fixed;
+    height: 100px;
+    font-size:14px;
+    margin-top: .8rem;
+    display:block;
+    border-radius:5px;
+    border:1px solid #808080;
+  }
+
+    /* Messages */
+    .Messages{
+        border-bottom: 1px solid black;
+    }
+  
