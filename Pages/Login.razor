@@ -1,0 +1,51 @@
+@page "/Login"
+@using System.ComponentModel.DataAnnotations
+
+
+<MudPaper Elevation="10" Height="750px" Width="110%">
+    <MudContainer Fixed="true">
+        <MudPaper Class="rounded" Elevation="10" Height="650px" Width="650px" Square="true">
+               <div class="d-flex justify-end">
+               <MudImage Src="Images/jobs.png" Width="200" Height="150" Alt="Swedish Farm House" Elevation="0" Class="rounded-lg mt-15 ml-3"/>
+               <MudText Class="  pt-15 mr-13 mt-8" Typo="Typo.h1">LSPU-EIS</MudText>
+               </div>
+               <MudText Class="d-flex justify-end mr-9 pb-15" Typo="Typo.caption">Laguna State Polytechnic University Employment Information System</MudText>
+                <div class="pb-15 px-16 d-flex flex-column gap-4">
+                <MudTextField  @bind-Value="Username" Label="Username" Variant="Variant.Text"></MudTextField>
+                <MudTextField  @bind-Value="Password" Label="Password" Variant="Variant.Text" InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="ButtonTestclick" AdornmentAriaLabel="Show Password" />
+                <MudButton Variant="Variant.Text">Forgot Password?</MudButton>
+                </div>
+                <div class="d-flex align-center flex-column-1 flex-grow-1 gap-4 ml-15 pl-15 ">
+                    <MudButton Class="ml-15 " Variant="Variant.Filled" Color="Color.Primary" 
+                     Style="@($" background:{Colors.Green.Default};")">SIGN UP</MudButton>
+                    <MudButton Class="ml-15 justify-end " Variant="Variant.Filled" Color="Color.Primary"
+                    Style="@($" background:{Colors.Blue.Lighten1};")">LOGIN</MudButton>
+                </div>
+        </MudPaper> 
+                
+    </MudContainer>
+</MudPaper>
+
+@code {
+    public string Username { get; set; }
+    public string Password { get; set; }
+
+     bool isShow;
+    InputType PasswordInput = InputType.Password;
+    string PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+
+    void ButtonTestclick()
+    {
+        @if (isShow)
+        {
+            isShow = false;
+            PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+            PasswordInput = InputType.Password;
+        }
+        else {
+            isShow = true;
+            PasswordInputIcon = Icons.Material.Filled.Visibility;
+            PasswordInput = InputType.Text;
+        }
+    }
+}
