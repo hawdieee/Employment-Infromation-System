@@ -157,3 +157,7 @@
     color: blue;
     border-radius:5px;
 }
+
+ .mud-button-label span {
+    display:none;
+}
