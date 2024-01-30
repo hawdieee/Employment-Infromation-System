@@ -1,54 +1,90 @@
-@page "/Signup"
-<PageTitle>Signup</PageTitle>
+@page "/SignUp"
 
-<MudContainer MaxWidth="MaxWidth.Small">
-    <MudPaper Class="rounded-lg">
-            
-        <MudContainer Class="pt-10 pb-6 px-10">
-            <MudText Typo="Typo.h4">WELCOME KA-PIYU</MudText>
-            <MudText Align="Align.Left" Class="grey-text">
-                Please fill in this form to create an account
+<MudPaper Class="pa-16 ma-2" Outlined="true">
+<div class="d-flex justify-end" >
+    <MudImage Style="pb-5" Width="250" Src="Images/LSPU.png"  Class="rounded-lg"/>
+    </div>
+   <MudText Typo="Typo.h3">WELCOME KA-PIYU</MudText>
+            <MudText Align="Align.Left" Class="blue-text" style="font-weight:600">
+                Elevate your Experience: Register for an account
             </MudText>
-        </MudContainer>
-
-        <MudDivider />
+     <div id="another_unique_identifier" class="ma-0" style="height:400px;overflow: auto;">
+    <MudPaper Elevation="0" Height="auto" Class="d-flex flex-column justify-space-between py-6">
+      <MudContainer MaxWidth="MaxWidth.Medium">
+    <MudPaper Class="rounded-lg">
+      
+      
 
         <MudContainer Class="pt-6 pb-10 px-10 d-flex flex-column gap-4">
-
             <div class="d-flex justify-space-between flex-grow-1 gap-4">
-                <MudTextField @bind-Value="FirstName" Label="First Name" Variant="Variant.Outlined"
+                <MudTextField @bind-Value="FirstName" Label="First Name" Required="true" RequiredError="First Name is required"
+                Variant="Variant.Outlined"
                     Class="flex-auto flex-grow-1" />
-                <MudTextField @bind-Value="LastName" Label="Last Name" Variant="Variant.Outlined"
+                <MudTextField @bind-Value="LastName" Label="Last Name" Required="true" RequiredError="Last Name is required"
+                 Variant="Variant.Outlined"
                     Class="flex-auto flex-grow-1" />
             </div>
 
-            <MudTextField @bind-Value="Username" Label="Username" Variant="Variant.Outlined" />
-            <MudTextField @bind-Value="Email" Label="Email" Variant="Variant.Outlined" />
-            <MudTextField @bind-Value="Password" Label="Password" Variant="Variant.Outlined" InputType="@PasswordInput"
+            <MudTextField @bind-Value="Email" Label="Email" Required="true" RequiredError="Email is required"
+            Variant="Variant.Outlined" />
+            <MudTextField @bind-Value="Password" Label="Password" Required="true" RequiredError="Password is required"
+            Variant="Variant.Outlined" InputType="@PasswordInput"
                 Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="ShowHidePassClick"
                 AdornmentAriaLabel="Show Password" />
-            <MudTextField @bind-Value="CPassword" Label="Confirm Password" Variant="Variant.Outlined" InputType="@PasswordInput"
+            <MudTextField @bind-Value="CPassword" Label="Confirm Password" Required="true" RequiredError="Password is required"
+            Variant="Variant.Outlined" InputType="@PasswordInput"
                 Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="ShowHidePassClick"
                 AdornmentAriaLabel="Show Password" />
+            <MudTextField @bind-Value="Birthdate" Label="Birth Date" Required="true" RequiredError="Birth Date is required"
+            Variant="Variant.Outlined" />
+            
+            <div class="d-flex justify-space-between flex-grow-1 gap-4">
+            <MudTextField @bind-Value="ContactNumber" Label="Contact Number" Required="true" RequiredError="Contact Number is required"
+            Variant="Variant.Outlined" 
+            Class="flex-auto flex-grow-1" />
+            <MudTextField T="DateTime?" Format="yyyy-MM-dd" Label="Year Graduated" Required="true" RequiredError="Year Graduated is required"
+            InputType="InputType.Date"/>
+            </div>
 
+
+            <MudSelect Margin="Margin.Dense" T="string" Label="Campus" Required="true" RequiredError="Campus is required"
+            Variant="Variant.Outlined">
+            <MudSelectItem Value="@("LSPU San Pablo City Campus")" />
+            <MudSelectItem Value="@("LSPU Sta. Cruz Campus")" />
+            <MudSelectItem Value="@("LSPU Los Baños Campus")" />
+            <MudSelectItem Value="@("LSPU Siniloan Campus")" />
+            </MudSelect>
+            <MudTextField class="Skill" @bind-Value="Skills" Label="Skills" Required="true" RequiredError="Skills is required"
+            Variant="Variant.Outlined"/>
+            <MudTextField @bind-Value="Province" Label="Province" Required="true" RequiredError="Province is required"
+            Variant="Variant.Outlined"/>
+            <MudTextField @bind-Value="City" Label="City/Municipality" Required="true" RequiredError="This field is required"
+            Variant="Variant.Outlined"/>
+            
             <MudCheckBox @bind-Checked="@Basic_CheckBox1" Label="I accept the Terms of Use & Privacy Policy" />
-            <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large">Sign Up</MudButton>
-
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large">Submit</MudButton>
+            
         </MudContainer>
 
     </MudPaper>
 </MudContainer>
-
+    </MudPaper>
+</div>
+</MudPaper>
 @code {
+    
     public string FirstName { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
-    public string Username { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;
     public string CPassword { get; set; } = string.Empty;
+    public string Birthdate { get; set; } = string.Empty;
+    public string ContactNumber { get; set; } = string.Empty;
+    public string Campus { get; set; } = string.Empty;
+     public string Skills { get; set; } = string.Empty;
+    public string Province { get; set; } = string.Empty;
+    public string City { get; set; } = string.Empty;
     public bool Basic_CheckBox1 { get; set; } = false;
-
-
 
     bool isShow;
     InputType PasswordInput = InputType.Password;
@@ -70,5 +106,3 @@
         }
     }
 }
-
-@* Codes *@
