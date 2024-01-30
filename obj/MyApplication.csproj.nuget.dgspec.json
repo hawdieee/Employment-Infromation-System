@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\Employment Information System\\MyApplication.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\Employment-Infromation-System\\MyApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\Employment Information System\\MyApplication.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\Employment-Infromation-System\\MyApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Employment Information System\\MyApplication.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Employment-Infromation-System\\MyApplication.csproj",
         "projectName": "MyApplication",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\Employment Information System\\MyApplication.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\Employment-Infromation-System\\MyApplication.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\Employment Information System\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\Employment-Infromation-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,0 +1,465 @@
+@page "/MA-aboutme"
+
+<PageTitle>Aboutme</PageTitle>
+
+<div>
+    <MudContainer Style="background-color:none; margin:auto;" class="rounded-lg d-flex w-full">
+             <MudImage Fluid="true" Src="Images/lspulogo.png" style="border:5px solid white; border-radius:5rem; position: absolute; z-index: -1; opacity:4%; top:35%; left:48%;" Alt="lspulogo"/>
+            <div class="profile d-flex flex-column flex-shrink-1 align-center justify-center pa-10" style="width: 25rem; height:50rem; background: linear-gradient(180deg, rgba(46,127,211,1) 30%, rgba(46,127,211,1) 49%, rgba(237,242,247,1) 98%); margin-left:-1.5rem; border-radius:.5rem; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+               <MudImage Fluid="true" Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem;" Alt="Swedish Farm House"/>
+                <p style="color:Black; padding-top:2.5rem;  padding-bottom:1rem; font-weight:bold;  font-size:1.5rem;">Nyleco-J Landicho Anuran</p>
+                 <div class="file-upload" style="max-width: 23rem;">
+                    <div class="resume">
+                            <h3 class="pt-3 pb-2" style="color:#800000">Upload Resume</h3>
+                    </div>
+                    <label for="file-input" style="border:1px solid rgb(113, 111, 111); padding-right:2rem; padding-left:2rem; cursor:pointer;">
+                    <i class="fas fa-upload"></i> Upload File
+                    </label>
+                    <input style="margin-top:1rem; width:14rem; background:green; cursor:pointer;" type="file" id="file-input" onchange="uploadFile()" multiple>
+                    </div>
+                    <div id="file-list"></div>
+            </div>  
+            
+            <MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6" Style=" " >   
+                <MudTabPanel Text="About Me" Style="max-width:50rem;">
+                    <div class="box">
+                         <MudText Style=" max-width:37rem; text-align:justify; " >
+                        <div class="name" style="display:grid; grid-template-columns:1fr 1fr 1fr; padding-top:.5rem;" >
+                            <div class="firstname" style="position: relative;">
+                                <h4 class="" style="color:#05488D;">First name</h4>
+                                <div class="textbox" style="background-color:none; width:9rem; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; left:1.4rem; top:1.9rem;">
+                                    <h4>Nyleco-J</h4>
+                                </div>
+                            </div>
+                            <div class="middlename" style="position: relative;">
+                                <h4 class="" style="color:#05488D;">Middle name</h4>
+                                <div class="textbox" style="background-color:none; width:9rem; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; left:1.4rem; top:1.9rem;">
+                                    <h4>Nyleco-J</h4>
+                                </div>
+                            </div>
+                            <div class="lastname" style="position: relative;">
+                                <h4 class="" style="color:#05488D;">Last name</h4>
+                                <div class="textbox" style="background-color:none; width:9rem; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; left:1.4rem; top:1.9rem;">
+                                    <h4>Nyleco-J</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="birtsex" style="padding-top: 4rem; display:grid; grid-template-columns:1fr 1fr;">
+                            <div class="birt">
+                                 <h4 class="" style="color:#05488D;">Birth Date</h4>
+                                <div class="textbox" style="background-color:none; width:15rem; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; left:3rem; top:9.5rem;">
+                                    <h4>October 08, 2000</h4>
+                                </div>
+                            </div>
+                            <div class="sex">
+                                 <h4 class="" style="color:#05488D;">Sex</h4>
+                                <div class="textbox" style="background-color:none; width:15rem; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; right:3rem; top:9.5rem;">
+                                    <h4>Female</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Address" style="padding-top:4rem; display:grid; grid-template-columns:1fr;">
+                            <div class="address">
+                                 <h4 class="" style="color:#05488D;">Birth Date</h4>
+                                <div class="textbox" style="background-color:none; width:85%; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; left:3rem; top:15rem;">
+                                    <h4>282 Poblacion III San Pedro St. Alaminos, Laguna </h4>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="contact" style="padding-top: 4rem; display:grid; grid-template-columns:1fr 1fr;">
+                            <div class="email">
+                                 <h4 class="" style="color:#05488D;">Email Address</h4>
+                                <div class="textbox" style="background-color:none; width:15rem; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; left:3rem; top:20.5rem;">
+                                    <h4>October 08, 2000</h4>
+                                </div>
+                            </div>
+                            <div class="number">
+                                 <h4 class="" style="color:#05488D;">Contact Number</h4>
+                                <div class="textbox" style="background-color:none; width:15rem; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; right:3rem; top:20.5rem;">
+                                    <h4>Female</h4>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="Education" style="padding-top:4rem; display:grid; grid-template-columns:1fr;">
+                            <div class="Course">
+                                  <h4 class="" style="color:#05488D;">Course</h4>
+                                <div class="textbox" style="background-color:none; width:85%; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; left:3rem; top:26rem;">
+                                    <h4>Bachelor of Science of Computer Science</h4>
+                                </div>
+                            </div>
+                            <div class="Campus" style="padding-top:4rem;"> 
+                                 <h4 class="" style="color:#05488D;">Campus</h4>
+                                <div class="textbox" style="background-color:none; width:85%; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; left:3rem; top:31.3rem;">
+                                    <h4>282 Poblacion III San Pedro St. Alaminos, Laguna </h4>
+                                </div>
+                            </div>
+                            <div class="YearGraduated" style="padding-top:4rem;">
+                                 <h4 class="" style="color:#05488D;">Year Graduated</h4>
+                                <div class="textbox" style="background-color:none; width:85%; text-align:start; padding:.5rem; border:1.5px solid gray; border-radius:.5rem; position:absolute; left:3rem; top:37rem;">
+                                    <h4>282 Poblacion III San Pedro St. Alaminos, Laguna </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </MudText>
+                    </div>
+                   
+
+
+
+                </MudTabPanel>
+                <MudTabPanel Text="Skills" class="skills" >
+                    <MudText>
+                        <div class="box-skills">
+                             <div class="HS">
+                                <div class="hardskills d-flex gap-4">
+                                   <img src="Images/hardskills.png" alt="">
+                                   <h3 class="px-4" style="background-color:#BCCDDE; padding:.6rem;    border-radius:1rem; margin-left:2rem;  ">Hard Skills</h3>
+                                </div>
+                                <div class="content-bullet">
+                                   <ul>
+                                        <li>Typing Speed</li>
+                                        <li>Computer Programming</li>
+                                        <li>Microsoft Office</li>
+                                   </ul>
+                                </div>
+                            </div>
+                             <div class="HS">
+                                <div class="hardskills d-flex gap-4">
+                                   <img src="Images/softskills.png" alt="" class="img2">
+                                   <h3 class="px-4" style="background-color:#BCCDDE; padding:.6rem;    border-radius:1rem; margin-left:.1rem;  ">Soft Skills</h3>
+                                </div>
+                                <div class="content-bullet">
+                                   <ul>
+                                        <li>Time Management</li>
+                                        <li>Critical Thinking</li>
+                                        <li>Team Work</li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </MudText>
+                </MudTabPanel>
+                <MudTabPanel Text="Work Experience" class="workexp" >
+                    <MudText>
+                        <div class="icon">
+                            <a href="#"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                        <div class="experience" >
+                            <div class="exp" style="padding-bottom:1rem;">
+                            <div class="title ">
+                                <h2>Web Developer</h2>
+                                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                            </div>
+                            <div class="subtitle">
+                                <p>Oct 2019-Present</p>
+                                <div class="d-flex gap-7">
+                                     <p style="color:rgb(92, 92, 240);">San Francisco, California</p>
+                                    <span class="px-5" style="background-color:#BCCDDE; border-radius:1rem; color:rgb(92, 92, 240); ">IT Industry</span>
+                                </div>
+                                <p>Full Time</p>
+                            </div>
+                            <p style="border-bottom: 3px solid black; padding-bottom:1.5rem; max-width:35rem;">an object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+                           
+                        </div>
+                        <div class="exp" style="padding-bottom:1rem;">
+                            <div class="title ">
+                                <h2>Web Developer</h2>
+                                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                            </div>
+                            <div class="subtitle">
+                                <p>Oct 2019-Present</p>
+                                <div class="d-flex gap-7">
+                                     <p style="color:rgb(92, 92, 240);">San Francisco, California</p>
+                                    <span class="px-5" style="background-color:#BCCDDE; border-radius:1rem; color:rgb(92, 92, 240); ">IT Industry</span>
+                                </div>
+                                <p>Full Time</p>
+                            </div>
+                            <p style="border-bottom: 3px solid black; padding-bottom:1.5rem; max-width:35rem;">an object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+                           
+                        </div>
+                        <div class="exp" style="padding-bottom:1rem;">
+                            <div class="title ">
+                                <h2>Web Developer</h2>
+                                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                            </div>
+                            <div class="subtitle">
+                                <p>Oct 2019-Present</p>
+                                <div class="d-flex gap-7">
+                                     <p style="color:rgb(92, 92, 240);">San Francisco, California</p>
+                                    <span class="px-5" style="background-color:#BCCDDE; border-radius:1rem; color:rgb(92, 92, 240); ">IT Industry</span>
+                                </div>
+                                <p>Full Time</p>
+                            </div>
+                            <p style="border-bottom: 3px solid black; padding-bottom:1.5rem; max-width:35rem;">an object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+                           
+                        </div>
+                        <div class="exp" style="padding-bottom:1rem;">
+                            <div class="title ">
+                                <h2>Web Developer</h2>
+                                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                            </div>
+                            <div class="subtitle">
+                                <p>Oct 2019-Present</p>
+                                <div class="d-flex gap-7">
+                                     <p style="color:rgb(92, 92, 240);">San Francisco, California</p>
+                                    <span class="px-5" style="background-color:#BCCDDE; border-radius:1rem; color:rgb(92, 92, 240); ">IT Industry</span>
+                                </div>
+                                <p>Full Time</p>
+                            </div>
+                            <p style="border-bottom: 3px solid black; padding-bottom:1.5rem; max-width:35rem;">an object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+                           
+                        </div>
+                        </div>
+                        
+                    </MudText>
+                </MudTabPanel>
+                <MudTabPanel Text="My Application" >
+                    <MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+                        <MudTabPanel Text="Saved">
+                            <MudText class="applications">
+                                <div class="content">
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <a href=""><i class="fa-solid fa-bookmark saved"></i></a>
+                                        <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Saved on Nov 11</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 ml-7">
+                                    <img src="Images/expire.svg" alt="">
+                                    <p style="font-size:1rem; font-weight:bold;">Job Experide soon</p>
+                                </div>
+                                </div>
+                                <div class="content">
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-bookmark saved"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Saved on Nov 11</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 ml-7 ">
+                                    <img src="Images/hiring.svg" alt="">
+                                    <p style="font-size:1rem; font-weight:bold;">Urgent Hiring</p>
+                                </div>
+                                </div>
+                                <div class="content">
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-bookmark saved"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Saved on Nov 11</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 ml-7">
+                                    <img src="Images/expire.svg" alt="">
+                                    <p style="font-size:1rem; font-weight:bold;">Job Experide soon</p>
+                                </div>
+                                </div>
+                                <div class="content">
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-bookmark saved"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Saved on Nov 11</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 ml-7">
+                                    <img src="Images/hiring.svg" alt="">
+                                    <p style="font-size:1rem; font-weight:bold;">Job Experide soon</p>
+                                </div>
+                                </div>
+                                <div class="content">
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <i class="fa-solid fa-bookmark saved"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Saved on Nov 11</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 ml-7">
+                                    <img src="Images/expire.svg" alt="">
+                                    <p style="font-size:1rem; font-weight:bold;">Job Experide soon</p>
+                                </div>
+                                </div>
+                               
+                            </MudText>
+                        </MudTabPanel>
+                        <MudTabPanel Text="Applied">
+                             <MudText class="applied">
+                                <div class="content" style="border-bottom:2px solid black;">
+                                    <span class="view-status ml-10" style="padding-left: 1rem; padding-right: 1rem; background:#BCCDDE; color:blue; border-radius:2px;">Applied</span>
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Applied on Nov 11</p>
+                                </div>
+                                <div class="applicant d-flex gap-2 align-center ml-8">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p class="pt-2">Around 10-99 people have applied</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 justify-center pt-3">
+                                    <p style="font-size:1rem; font-weight:bold; background:#BCCDDE; padding-left:1rem; padding-right:1rem;">Application Status</p>
+                                </div>
+                                </div>
+                                <div class="content" style="border-bottom:2px solid black;">
+                                    <span class="view-status ml-10" style="padding-left: 1rem; padding-right: 1rem; background:#BCCDDE; color:blue; border-radius:2px;">Applied</span>
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Applied on Nov 11</p>
+                                </div>
+                                <div class="applicant d-flex gap-2 align-center ml-8">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p class="pt-2">Around 10-99 people have applied</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 justify-center pt-3">
+                                    <p style="font-size:1rem; font-weight:bold; background:#BCCDDE; padding-left:1rem; padding-right:1rem;">Application Status</p>
+                                </div>
+                                </div>
+                                <div class="content" style="border-bottom:2px solid black;">
+                                    <span class="view-status ml-10" style="padding-left: 1rem; padding-right: 1rem; background:#BCCDDE; color:rgb(255, 0, 0); border-radius:2px;">Not Selected</span>
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Applied on Nov 11</p>
+                                </div>
+                                <div class="applicant d-flex gap-2 align-center ml-8">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p class="pt-2">Around 10-99 people have applied</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 justify-center pt-3">
+                                    <p style="font-size:1rem; font-weight:bold; background:#BCCDDE; padding-left:1rem; padding-right:1rem;">Application Status</p>
+                                </div>
+                                </div>
+                                <div class="content" style="border-bottom:2px solid black;">
+                                    <span class="view-status ml-10" style="padding-left: 1rem; padding-right: 1rem; background:#BCCDDE; color:blue; border-radius:2px;">Applied</span>
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Applied on Nov 11</p>
+                                </div>
+                                <div class="applicant d-flex gap-2 align-center ml-8">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p class="pt-2">Around 10-99 people have applied</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 justify-center pt-3">
+                                    <p style="font-size:1rem; font-weight:bold; background:#BCCDDE; padding-left:1rem; padding-right:1rem;">Application Status</p>
+                                </div>
+                                </div>
+                                <div class="content" style="border-bottom:2px solid black;">
+                                    <span class="view-status ml-10" style="padding-left: 1rem; padding-right: 1rem; background:#BCCDDE; color:rgb(255, 0, 0); border-radius:2px;">Not Selected</span>
+                                     <div class="title ">
+                                    <div class="left">
+                                        <i class="fa-solid fa-file"></i>
+                                        <h3>Web Developer</h3>
+                                    </div>
+                                    <div class="right">
+                                        <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                    </div>
+                                </div>
+                                <div class="subtitle">
+                                    <p>Laguna State Polytechnic University</p>
+                                    <p>Alaminos, Laguna</p>
+                                    <p style="opacity:70%;">Applied on Nov 11</p>
+                                </div>
+                                <div class="applicant d-flex gap-2 align-center ml-8">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p class="pt-2">Around 10-99 people have applied</p>
+                                </div>
+                                <div class="status d-flex gap-2 pt-2 justify-center pt-3">
+                                    <p style="font-size:1rem; font-weight:bold; background:#BCCDDE; padding-left:1rem; padding-right:1rem;">Application Status</p>
+                                </div>
+                                </div>
+                               
+                            </MudText>
+                        </MudTabPanel>
+                    </MudTabs>
+                </MudTabPanel>
+            </MudTabs>
+            
+            
+    </MudContainer>
+     
+
+   
+</div>
+

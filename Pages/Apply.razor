@@ -1,0 +1,81 @@
+@page "/Apply"
+
+<PageTitle>Apply Button</PageTitle>
+<MudGrid>
+    @* -----QUESTION----- *@
+    <MudItem xs="6">
+        <MudPaper Class="d-flex align-center justify-center py-8" style ="width: 120%;">
+            <div class="apply__content px-6">
+                <h1 style="color:#05488D; font-size: 2rem;" class="mb-7">Answer this questions from the employer</h1>
+                <p style="font-size: 1.5rem; font-weight: 600;">Relevant experience</p>
+
+                    <div class="relevant__content border border-solid mud-border-dark pa-4 rounded mb-6"  >
+                        <h1 style="font-size: 1.5rem;">Job Title</h1>
+                        <MudTextField @bind-Value="TextValue1"  Variant="Variant.Outlined"></MudTextField>
+                        <h1 style="font-size: 1.5rem;" class="mt-4">Company</h1>
+                        <MudTextField @bind-Value="TextValue2"  Variant="Variant.Outlined"></MudTextField>
+                    </div>
+
+                    <div class="planning">
+                        <h1 style="color:#05488D; font-size: 1.5rem;">Will you be able to reliably commute or relocate to Calamba, Laguna for this job?</h1>
+                        <MudRadioGroup T="int" style="display: contents;">
+                            <div>
+                                <MudRadio Option="1" Color="Color.Primary" UnCheckedColor="Color.Default">Yes, I can make the commute</MudRadio>
+                            </div>
+                            <div>
+                                <MudRadio Option="2" Color="Color.Primary" UnCheckedColor="Color.Default">Yes, I am planning to relocate </MudRadio>
+                            </div>
+                            <div>
+                                <MudRadio Option="3" Color="Color.Primary" UnCheckedColor="Color.Default">Yes, but I need relocation assistance</MudRadio>
+                            </div>
+                            <div>
+                                <MudRadio Option="4" Color="Color.Primary"UnCheckedColor="Color.Default">No</MudRadio>
+                            </div>
+                        </MudRadioGroup>
+                    </div>
+
+                    <div class="experience__content">
+                            <h1 style="color:#05488D; font-size: 1.5rem; mt-10">How many years of experience do you have in this field?</h1>
+                            <MudTextField @bind-Value="TextValue3"  Variant="Variant.Outlined"></MudTextField>
+                    </div>
+
+                    <div class="resume__content" style="padding-bottom: 2rem;">
+                            <h1 style="color:#05488D; font-size: 1.5rem; margin-top: 1rem;" > Upload a resume for the employer</h1>
+                            <div class="border border-solid mud-border-dark pa-4 rounded" style="text-align:center; width: 70%; margin: 0 auto; margin-top: 1rem;">
+                                <p style="color:#05488D; font-size: 1rem; font-weight: 600; text-transform: uppercase;">Upload Resume</p>
+                                <p class="border border-solid mud-border-dark pa-4 rounded my-2" style="width: 80%; margin: 0 auto; ">Choose File</p>
+                                <div class="mt-4 d-flex gap-4" style="place-content: center;">
+                                    <MudButton Variant="Variant.Filled" Color="Color.Info"  Size="Size.Medium" Style="background-color: #05488D; color: white; border-radius: 10rem; padding: .5rem 2rem;">Browse</MudButton>
+                                    <MudButton Variant="Variant.Filled" Color="Color.Info"  Size="Size.Medium" Style="background-color: #027F28; color: white; border-radius: 10rem;padding: .5rem 2rem;">Upload</MudButton>
+                                </div>
+                            </div>
+                    </div>
+                <MudButton Variant="Variant.Filled" Color="Color.Info"  Size="Size.Medium" Style="background-color: #05488D; color: white; border-radius: 10rem; padding: .5rem 3rem; display: flex; margin: 0 auto;">Submit</MudButton>
+            </div>
+        </MudPaper>
+    </MudItem>
+    @* -----DESCRIPTIOM----- *@
+    <MudItem xs="6" style="padding-left: 8rem;">
+        <MudPaper Class="d-flex align-center justify-center py-8" style ="width: 90%;">
+            <div class="job_desc px-6">
+                <h1 style="color:#05488D; font-size: 2rem; margin-top: 1rem;">Web Developer</h1>
+                <h2 style="color:#BCCDDE; font-size: 1.5rem; max-width: 20rem;">Fame Company Calamba, Laguna</h2>
+                    <div class="job_desc__content">
+                            <h1 style="color:#05488D; font-size: 1.5rem; margin-top: 1rem;">JOB DESCRIPTION:</h1>
+                            <p class="d-flex align-items: center; gap-2" style="font-weight: 500; max-width: 20rem" ><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Establish and explore all possible options for designing and deriving the best software solution.</p>
+                            <p class="d-flex align-items: center; gap-2" style="font-weight: 500; max-width: 20rem; margin-top: .5rem;"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Establish and explore all possible options for designing and deriving the best software solution.</p>
+                            <p class="d-flex align-items: center; gap-2" style="font-weight: 500; max-width: 20rem; margin-top: .5rem;"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Establish and explore all possible options for designing and deriving the best software solution.</p>
+                            <p class="d-flex align-items: center; gap-2" style="font-weight: 500; max-width: 20rem; margin-top: .5rem;"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Establish and explore all possible options for designing and deriving the best software solution.</p>
+                            <p class="d-flex align-items: center; gap-2" style="font-weight: 500;  margin-top: .5rem;"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Establish and explore all possible options for designing and deriving the best software solution.</p>
+                    </div>
+            </div>
+        </MudPaper>
+    </MudItem>
+    
+</MudGrid>
+
+@code {
+    public string TextValue1 { get; set; }
+    public string TextValue2 { get; set; }
+    public string TextValue3 { get; set; }
+}

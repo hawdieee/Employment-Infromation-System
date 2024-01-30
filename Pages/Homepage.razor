@@ -1,0 +1,108 @@
+@page "/Homepage"
+
+<PageTitle>Homepage</PageTitle>
+
+
+<div style="font-size: 4rem;">
+    <MudTextField  @bind-Value="Search" Label="Job Title or Company" Variant="Variant.Filled"/>
+</div>
+
+<div class="d-flex mt-3">
+<MudButton Variant="Variant.Filled" Size="Size.Large"  Color="Color.Tertiary" style="margin: 0 auto;">Find Job</MudButton>
+</div>
+
+@code {
+    public string Search { get; set;}
+}
+
+@* -----LEFT SIDE OF HOMEPAGE----- *@
+<div class="mt-10">
+    <MudGrid>
+        <MudItem xs="12" sm="6">
+            <MudPaper Class="d-flex align-center justify-center mud-width-full py-8" style="background-color: #BCCDDE;">
+                    <div class="job_content d-flex flex-column flex-grow-1 gap-4 px-4">
+                       <p style="text-align: center; color: #302E2E; font-size: 1.5rem;">Job Vacancies</p>
+                            <div class="content1 py-6 px-6" style="background-color: #FFFFFF;">
+                                <h1 style="max-width: 30rem">Medior / Senior JavaScript Developer (Vue / React / Node)</h1>
+                                <div class="mx-4; " style="font-size: 1rem; margin-top: .5rem;">
+                                    <p class="d-flex align-items: center; gap-2"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Developing websites using the latest web technologies and best practices.</p>
+                                    <p class="d-flex align-items: center; gap-2"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Collaborating with the design team to ensure a seamless and engaging user experience.</p>
+                                </div>
+                            </div>
+
+                            <div class="content1 py-6 px-6" style="background-color: #FFFFFF;">
+                                <h1 style="max-width: 30rem">Medior / Senior JavaScript Developer (Vue / React / Node)</h1>
+                                <div class="mx-4; " style="font-size: 1rem; margin-top: .5rem;">
+                                    <p class="d-flex align-items: center; gap-2"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Developing websites using the latest web technologies and best practices.</p>
+                                    <p class="d-flex align-items: center; gap-2"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Collaborating with the design team to ensure a seamless and engaging user experience.</p>
+                                </div>
+                            </div>
+
+                            <div class="content1 py-6 px-6" style="background-color: #FFFFFF;">
+                                <h1 style="max-width: 30rem">Medior / Senior JavaScript Developer (Vue / React / Node)</h1>
+                                <div class="mx-4; " style="font-size: 1rem; margin-top: .5rem;">
+                                    <p class="d-flex align-items: center; gap-2"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Developing websites using the latest web technologies and best practices.</p>
+                                    <p class="d-flex align-items: center; gap-2"><MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small"/>Collaborating with the design team to ensure a seamless and engaging user experience.</p>
+                                </div>
+                            </div>
+                            
+                    </div>
+            </MudPaper>
+        </MudItem>
+
+     @* -----RIGHT SIDE OF HOMEPAGE-----*@   
+        <MudItem xs="12" sm="6">
+            <MudPaper Class="d-flex align-center justify-center mud-width-full py-8" style="background-color: #BCCDDE;">
+                <div class="job_content d-flex flex-column flex-grow-1 gap-4 px-4">
+                        <p style="text-align: center; color: #302E2E; font-size: 1.5rem;">Full Info</p>
+                            <div class="content1 py-6 px-6" style="background-color: #05488D; color: #FFFFFF;">
+                                <h1 style="max-width: 30rem " >Medior / Senior JavaScript Developer (Vue / React / Node)</h1>
+                                <div class="mx-4; " style="font-size: 1rem; margin-top: .5rem;">
+                                    <p>Company Name</p>
+                                    <p>Location</p>
+                                </div>
+                                <div class="mt-6 d-flex align-items: center; gap-2" onclick="getElementById('bkmark').style.color ='#027F28', getElementById('unbkmark').style.color ='#D9D9D9' ">
+                                    <MudButton Href="Apply" Variant="Variant.Filled" Style="background-color: #FFFFFF; color: black; border-radius: 10rem; text-transform: capitalize;">Apply now</MudButton>
+                                    <MudIconButton Icon="@Icons.Material.Filled.Bookmark" Size="Size.Medium"  id ="bkmark" ></MudIconButton>
+                                </div>
+                            </div>
+                            <div>
+                                <p style="color: #302E2E; font-size: 1.5rem;">Job Description</p>
+                                @* <div>
+                                    <MudPaper Height="430px" Width="95%" Square="true"  style="background-color: #05488D; color: #FFFFFF;"></MudPaper>
+                                    </div> *@
+                            </div>
+                            <div id="unique_id_scroll_section" class="ma-0" style="height:395px; overflow: auto; color: black">
+                                <MudPaper Elevation="0" Height="400px" Class="d-flex flex-column py-6 px-6" style="background-color: #05488D; color: white;">
+                                    <h1 style="max-width: 30rem">Medior / Senior JavaScript Developer (Vue / React / Node)</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo iusto rem, ut numquam nostrum aspernatur explicabo ipsam veniam doloribus alias vero perferendis saepe beatae illum officiis natus sequi nulla? Magnam earum laborum animi sed nisi nemo blanditiis doloribus labore.</p>
+                                    <h1 style="max-width: 30rem">Medior / Senior JavaScript Developer (Vue / React / Node)</h1>
+                                    <h1 style="max-width: 30rem">Medior / Senior JavaScript Developer (Vue / React / Node)</h1>
+                                    <MudScrollToTop TopOffset="200"
+                                                    OnScroll="OnScroll"
+                                                    Selector="#unique_id_scroll_section"
+                                                    VisibleCssClass="visible absolute"
+                                                    HiddenCssClass="invisible">
+                                        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.ArrowUpward" Color="Color">Go to top</MudButton>
+                                    </MudScrollToTop>
+                                </MudPaper>
+                            </div>
+
+                            @code{
+                                Color Color = Color.Success;
+                                private void OnScroll(ScrollEventArgs e)
+                                {
+                                    Color = (e.FirstChildBoundingClientRect.Top*-1) switch
+                                    {
+                                        var x when x<  50 => Color.Info,
+                                        var x when x < 100 => Color.Info,
+                                        var x when x < 150 => Color.Info,
+                                        _=>Color.Error
+                                    };
+                                }
+                            }
+                </div>
+            </MudPaper>
+        </MudItem>    
+    </MudGrid>
+    </div>

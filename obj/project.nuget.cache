@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dMhkYbAi8EYPtcFlO43Kq63/Worc6OYYb/k5pVl3QskbM8PINGJj7CUzqaQ0ZmScDQolIHGpOZaE1NVzSQwX/g==",
+  "dgSpecHash": "Zced7BLiAT/OYBJxxChM/5ZM5CbQOogZ4exoBIwmfZ1ahu9azO7E5jCqertfaOsjUM07fBBBTixk3vfJxF0mEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\Employment Information System\\MyApplication.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\Employment-Infromation-System\\MyApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.7\\microsoft.aspnetcore.authorization.6.0.7.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.7\\microsoft.aspnetcore.components.6.0.7.nupkg.sha512",

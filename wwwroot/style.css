@@ -1,0 +1,159 @@
+.file-upload {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 25px;
+}
+
+
+.fas.fa-upload {
+    margin-right: 5px;
+}
+
+#file-list {
+    margin-top: 20px;
+}
+.mud-tab.mud-tab-active {
+    color: #800000;
+    font-weight:bold;
+}
+
+
+.mud-tab-slider {
+    background: #800000;;
+}
+.skills{
+    position:relative;
+}
+.box-skills{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+.hardskills{
+    padding-top:1.7rem;
+    margin-left:2rem;
+    h3{
+        color:black;
+    }
+    
+}
+.hardskills img{
+    position:absolute;
+    left:3rem;
+    height:3rem;
+}
+.hardskills .img2{
+    position:absolute;
+    left:19.3rem;
+    height:3rem;
+}
+.HS .content-bullet ul li{
+   list-style: circle;
+}
+.HS .content-bullet{
+    padding-top:1rem;
+    margin-left:4rem;
+}
+
+
+/* ---------WORK EXPERIENCE--------- */
+
+.icon{
+    display:flex;
+    align-items:center;
+    justify-content:end;
+    margin-right:1.5rem;
+    padding-bottom:.7rem;
+}
+.icon a{
+    padding-right:.3rem;
+    font-size:.8rem;
+    color:black;
+    padding:.4rem;
+    background:green;
+    color:white;
+    border-radius:2rem;
+    
+}
+.experience{
+    overflow:scroll;
+    max-height:40rem;
+    max-width:38rem;
+    margin-right:-.3rem;
+    padding-top:1.5rem;
+    scroll-behavior:smooth;
+}
+.exp .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom:.7rem;
+    margin-right:4rem;
+}
+
+/* --------My Application------- */
+
+.mud-tabs.mud-tabs-rounded .mud-tabs-panels {
+    border-radius: var(--mud-default-borderradius);
+    height: 40rem;
+}
+/* .boxcontent{
+    overflow:scroll;
+    max-height:38rem;
+} */
+.content{
+    padding-top:.5rem;
+    border-top:2px solid black;
+    padding-bottom:1rem;
+    margin-right:1rem;
+   
+}
+.applications, .applied{
+    padding-top:.5rem;
+    padding-bottom:1rem;
+    max-height:37rem;
+    overflow:scroll;
+    
+}
+.applications .title, .applied .title {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;  
+}
+.applications .title .left, .applied .title .left{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+.applications .title .right, .applied .title .right{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+.applications .title .right .saved{
+    color:green;
+}
+.applications .title .left i, .applied .title .left i{
+    font-size:2rem;
+}
+.applications .title .left h3, .applied  .title .left h3{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#05488D;
+}
+
+.applications .subtitle, .applied .subtitle{
+    margin-left:2.4rem;
+    padding-top:.5rem;
+}
+.applied .status p{
+    color: blue;
+    border-radius:5px;
+}
