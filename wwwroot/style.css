@@ -204,4 +204,7 @@
     .Messages{
         border-bottom: 1px solid black;
     }
-  
+    /* .mud-dialog-actions{
+        display: flex;
+        place-content: center;
+    } */
