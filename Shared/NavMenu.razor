@@ -1,12 +1,20 @@
 ﻿<MudNavMenu>
-    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
-    <MudNavLink Href="counter" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink>
-    <MudNavLink Href="fetchdata" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Fetch data</MudNavLink>
-    <MudNavLink Href="Signup" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Signup</MudNavLink>
-    <MudNavLink Href="Signup1" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Signup1</MudNavLink>
-    <MudNavLink Href="Homepage" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Homepage</MudNavLink>
-    <MudNavLink Href="Apply" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Apply</MudNavLink>
-    <MudNavLink Href="MA-aboutme" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">My Application</MudNavLink>
-    <MudNavLink Href="EmployerJob" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Employer/Post Job</MudNavLink>
-    <MudNavLink Href="Mess" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Mess</MudNavLink>
+    <MudNavLink Href="Dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Dashboard</MudNavLink>
+    <MudNavLink Href="Searchjob" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Add">Search Job</MudNavLink>
+    <MudNavLink Href="Application" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Description">Application</MudNavLink>
+    <MudNavLink Href="Profile" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.EmojiPeople">Profile</MudNavLink>
+    <MudNavLink Href="ShowProfile" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.PeopleAlt">ShowProfile</MudNavLink>
+    <MudNavLink Href="Companies" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Apartment">Companies</MudNavLink>
+    <MudNavLink Href="Email" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Email">Email</MudNavLink>
+    <MudNavLink Href="Message" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Message">Message</MudNavLink>
+    
+     <MudNavGroup Class="mt-4" Icon="@Icons.Material.Filled.Assignment" Title="Reports" @bind-Expanded=_isExpanded1>
+        <MudNavLink Icon="@Icons.Material.Filled.Person" Href="/UserApplied" >User Applied</MudNavLink>
+        <MudNavLink Icon="@Icons.Material.Filled.LibraryBooks" Href="/NoApplied">No. Applied</MudNavLink>
+        <MudNavLink Icon="@Icons.Material.Filled.InsertDriveFile" Href="/RecentViewCompany">Recent View Company</MudNavLink>
+    </MudNavGroup>
 </MudNavMenu>
+
+@code {
+    bool _isExpanded1 = true;
+}

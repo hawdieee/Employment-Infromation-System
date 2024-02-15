@@ -162,7 +162,6 @@
 .btn {
     border: none;
     outline: none;
-    padding: 10px 16px;
     background-color: #f1f1f1;
     cursor: pointer;
   }
@@ -191,7 +190,7 @@
     overflow:hidden;
     /* demo only: */
     padding:1rem;
-    width:515px fixed;
+    width: 515px;
     height: 100px;
     font-size:14px;
     margin-top: .8rem;
@@ -204,7 +203,185 @@
     .Messages{
         border-bottom: 1px solid black;
     }
-    /* .mud-dialog-actions{
-        display: flex;
-        place-content: center;
-    } */
+
+/* Profile page*/
+.Profile .mud-select{
+    width: 60%;
+}
+
+/* .search-container {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 5px;
+    background-color: #1667ba;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: #1667ba;
+    color: white;
+  }
+  
+  .search-button {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  .search-input::placeholder {
+    color: white;
+  } */
+
+.profile__header {
+    overflow: hidden;
+    padding: 1.2rem;
+    
+  }
+  
+  .profile__header .search {
+    float: right;
+  }
+  
+  .profile__header input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    background-color:#1667ba;
+    color: white;
+    padding: 0.5rem 6rem;
+    padding-left: 1rem;
+  }
+  .profile__header input::placeholder {
+   color: white;
+  }
+  
+  .profile__header .search button {
+    float: right;
+    padding: 11.5px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #1667ba;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .profile__header .search button:hover {
+    background: #027F28;
+  }
+
+    /* COMPANIES*/
+  .companies .findjob_btn .button{
+    background-color: #027F28;
+    color: white;
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+  }
+  
+  .companies input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    background-color:#D9D9D9;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 6rem;
+    padding-left: 2rem;
+    width: 80%;
+    border-radius: 2rem;
+  }
+  .companies input::placeholder {
+   color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .companies_search {
+    display: flex;
+    place-content: center;
+  }
+
+  .companies .findjob_btn {
+    display: flex;
+    place-content: center;
+    margin-top: 1rem;
+  }
+  .companies .nameofcompany{
+    text-align: center;
+  }
+  .companies .nameofcompany img{
+    width: 5rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 2rem;
+    place-content: center;
+  }
+  .grid-item {
+    background-color: #D9D9D9;
+    padding: 20px;
+    text-align: center;
+    width: 20rem;
+    border-radius: 1rem;
+    
+  }
+
+
+  /* Empolyer page*/
+  .employer .employer__title{
+    h1{
+      font-size: 2rem;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
