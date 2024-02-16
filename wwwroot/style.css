@@ -1,212 +1,206 @@
 .file-upload {
-    display: inline-block;
-    color: #fff;
-    border: 1px solid black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    border-radius: 25px;
+  display: inline-block;
+  color: #fff;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 25px;
 }
 
 .fas.fa-upload {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 #file-list {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .mud-tab.mud-tab-active {
-    color: #800000;
-    font-weight:bold;
+  color: #800000;
+  font-weight: bold;
 }
 
 .mud-tab-slider {
-    background: #800000;;
+  background: #800000;
 }
-.skills{
-    position:relative;
+.skills {
+  position: relative;
 }
-.box-skills{
-    display:grid;
-    grid-template-columns:1fr 1fr;
+.box-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.hardskills{
-    padding-top:1.7rem;
-    margin-left:2rem;
-    h3{
-        color:black;
-    }
-    
+.hardskills {
+  padding-top: 1.7rem;
+  margin-left: 2rem;
+  h3 {
+    color: black;
+  }
 }
-.hardskills img{
-    position:absolute;
-    left:3rem;
-    height:3rem;
+.hardskills img {
+  position: absolute;
+  left: 3rem;
+  height: 3rem;
 }
-.hardskills .img2{
-    position:absolute;
-    left:19.3rem;
-    height:3rem;
+.hardskills .img2 {
+  position: absolute;
+  left: 19.3rem;
+  height: 3rem;
 }
-.HS .content-bullet ul li{
-   list-style: circle;
+.HS .content-bullet ul li {
+  list-style: circle;
 }
-.HS .content-bullet{
-    padding-top:1rem;
-    margin-left:4rem;
+.HS .content-bullet {
+  padding-top: 1rem;
+  margin-left: 4rem;
 }
-
 
 /* ---------WORK EXPERIENCE--------- */
 
-.icon{
-    display:flex;
-    align-items:center;
-    justify-content:end;
-    margin-right:1.5rem;
-    padding-bottom:.7rem;
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 1.5rem;
+  padding-bottom: 0.7rem;
 }
-.icon a{
-    padding-right:.3rem;
-    font-size:.8rem;
-    color:black;
-    padding:.4rem;
-    background:green;
-    color:white;
-    border-radius:2rem;
-    
+.icon a {
+  padding-right: 0.3rem;
+  font-size: 0.8rem;
+  color: black;
+  padding: 0.4rem;
+  background: green;
+  color: white;
+  border-radius: 2rem;
 }
-.experience{
-    overflow:scroll;
-    max-height:40rem;
-    max-width:38rem;
-    margin-right:-.3rem;
-    padding-top:1.5rem;
-    scroll-behavior:smooth;
+.experience {
+  overflow: scroll;
+  max-height: 40rem;
+  max-width: 38rem;
+  margin-right: -0.3rem;
+  padding-top: 1.5rem;
+  scroll-behavior: smooth;
 }
-.exp .title{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom:.7rem;
-    margin-right:4rem;
+.exp .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.7rem;
+  margin-right: 4rem;
 }
 
 /* --------My Application------- */
 
 .mud-tabs.mud-tabs-rounded .mud-tabs-panels {
-    border-radius: var(--mud-default-borderradius);
-    height: 40rem;
+  border-radius: var(--mud-default-borderradius);
+  height: 40rem;
 }
 /* .boxcontent{
     overflow:scroll;
     max-height:38rem;
 } */
-.content{
-    padding-top:.5rem;
-    border-top:2px solid black;
-    padding-bottom:1rem;
-    margin-right:1rem;
-   
+.content {
+  padding-top: 0.5rem;
+  border-top: 2px solid black;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
 }
-.applications, .applied{
-    padding-top:.5rem;
-    padding-bottom:1rem;
-    max-height:37rem;
-    overflow:scroll;
-    
+.applications,
+.applied {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  max-height: 37rem;
+  overflow: scroll;
 }
-.applications .title, .applied .title {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;  
+.applications .title,
+.applied .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.applications .title .left, .applied .title .left{
-    display:flex;
-    align-items:center;
-    gap:1rem;
+.applications .title .left,
+.applied .title .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.applications .title .right, .applied .title .right{
-    display:flex;
-    align-items:center;
-    gap:1rem;
+.applications .title .right,
+.applied .title .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.applications .title .right .saved{
-    color:green;
+.applications .title .right .saved {
+  color: green;
 }
-.applications .title .left i, .applied .title .left i{
-    font-size:2rem;
+.applications .title .left i,
+.applied .title .left i {
+  font-size: 2rem;
 }
-.applications .title .left h3, .applied  .title .left h3{
-    font-size:1.5rem;
-    font-weight:bold;
-    color:#05488D;
-}
-
-.applications .subtitle, .applied .subtitle{
-    margin-left:2.4rem;
-    padding-top:.5rem;
-}
-.applied .status p{
-    color: blue;
-    border-radius:5px;
+.applications .title .left h3,
+.applied .title .left h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #05488d;
 }
 
----Header Button---
-.btn {
+.applications .subtitle,
+.applied .subtitle {
+  margin-left: 2.4rem;
+  padding-top: 0.5rem;
+}
+.applied .status p {
+  color: blue;
+  border-radius: 5px;
+}
+
+.mud-button-label span {
+  display: none;
+}
+
+.firstcont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .search-container {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 5px;
+    background-color: #1667ba;
+  }
+  
+  .search-input {
+    flex: 1;
     border: none;
     outline: none;
-    background-color: #f1f1f1;
+    padding: 5px;
+    background-color: #1667ba;
+    color: white;
+  }
+  
+  .search-button {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
   }
   
-  /* Style the active class (and buttons on mouse-over) */
-  .active, .btn:hover {
-    background-color: #05488D;
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  .search-input::placeholder {
     color: white;
-  }
-  .mud-tabs-toolbar-content{
-    place-content: center;
-    display: flex;
-  }
-  .mud-input>input.mud-input-root-outlined{
-   color: black;
-   z-index: 1;
-  }
-
-  .mud-elevation-1{
-    box-shadow: none;
-  }
-
-  /* Job Description text area*/
-  .Jobdes textarea{  
-    /* box-sizing: padding-box; */
-    overflow:hidden;
-    /* demo only: */
-    padding:1rem;
-    width: 515px;
-    height: 100px;
-    font-size:14px;
-    margin-top: .8rem;
-    display:block;
-    border-radius:5px;
-    border:1px solid #808080;
-  }
-
-    /* Messages */
-    .Messages{
-        border-bottom: 1px solid black;
-    }
-
-/* Profile page*/
-.Profile .mud-select{
-    width: 60%;
-}
-
+  } */
 
 .profile__header {
     overflow: hidden;
@@ -321,32 +315,40 @@
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
+.rightcont p {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  max-width: 40rem;
+  margin-right: 2rem;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+/* LOGIN */
+
+.loginflex {
+  display: flex;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.logincont {
+  width: 30rem;
+  height: 441px;
+  padding: 4rem 2rem;
+}
+.login .logbox {
+  background: rgb(46, 127, 211);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 127, 211, 1) 30%,
+    rgba(46, 127, 211, 1) 49%,
+    rgba(237, 242, 247, 1) 98%
+  );
+  margin: 6rem 4rem;
+  border-radius: 1.5rem;
 }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+.login .login__wrapper {
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 45rem;
+  border-radius: 2rem;
 }
