@@ -152,7 +152,7 @@
             </div>
             <MudGrid>
                 <MudItem xs="6">
-                    <MudPaper Class="py-8 px-2"><h1 style="font-size: 1.5rem;">Role Information</h1>
+                    <div Class="px-2"><h1 style="font-size: 1.5rem;">Role Information</h1>
                         <div class="px-6">
                             <h1 style="font-size: 1.2rem; color: #05488D; margin-top: 1rem;">Job Title *</h1>
                             <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Jobtitle"  Variant="Variant.Outlined"></MudTextField></div>
@@ -163,10 +163,6 @@
                             <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Qualification2"  Variant="Variant.Outlined"></MudTextField></div>
                         </div>
                         <div class="px-6">
-                            <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D">Experience *</h1>
-                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Experience"  Variant="Variant.Outlined"></MudTextField></div>
-                        </div>
-                        @* <div class="px-6">
                             <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D">Location of Deployment *</h1>
                             <MudSelect T="string" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter" Style="background-color: rgba(5, 72, 141, 0.25); ">
                                 <MudSelectItem Value="@("Laguna")" />
@@ -197,12 +193,16 @@
                                         public override string ToString() => Name;
                                     }
                                 }
-                        </div> *@
-                    </MudPaper>
+                        </div>
+                        <div class="px-6">
+                            <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D">Experience *</h1>
+                            <div style="background-color:rgba(5, 72, 141, 0.25); "><MudTextField @bind-Value="Experience"  Variant="Variant.Outlined"></MudTextField></div>
+                        </div>
+                    </div>
                 </MudItem>
 
                 <MudItem xs="6">
-                    @* <MudPaper Class="mud-width-full py-8 px-2">
+                    <div Class="mud-width-full py-8 px-2">
                         <div class="px-6">
                             <h1 style="font-size: 1.2rem; margin-top: 1rem; color: #05488D; margin-top: 3.1rem;">Work Type *</h1>
                             <MudRadioGroup T="int" style="">
@@ -230,17 +230,17 @@
                             
                             <textarea rows='1'></textarea>
                         </div>
-                    </MudPaper> *@
+                    </div>
                 </MudItem>
-                @* <MudItem xs="12">
-                    <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">
+        </MudGrid>
+                <div>
+                    <div Class="d-flex align-center justify-center mud-width-full">
                         <div class="d-flex gap-4" style="place-content: center;">
                                     <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #05488D; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Next</p></MudButton>
                                     <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #027F28; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Cancel</p></MudButton>
                          </div>
-                    </MudPaper>
-                </MudItem> *@
-        </MudGrid>
+                    </div>
+                </div>
         </MudTabPanel>
 
         @* -----PUBLISH-----*@
