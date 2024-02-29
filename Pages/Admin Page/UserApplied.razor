@@ -1,16 +1,14 @@
 @page "/UserApplied"
-<div class="d-flex">
-<MudText Class="d-flex" Typo="Typo.h3" style= "color:blue"> User Applied </MudText>
-<MudPaper Class="rounded-pill d-flex justify-end " Width="480px" Height="100px" Elevation="0" >
-<MudTextField Style="@($"background:{Colors.Shades.White};")" @bind-Value="Disabled"  Variant="Variant.Filled" Disabled="true" />
+<MudPaper Class="d-flex justify-space-between flex-grow-1 gap-4" Elevation="0">
+    <MudPaper Elevation="0" Width="500px" Height="64px">
+    <MudText Typo="Typo.h3" style= "color:blue"> User Applied </MudText>
+    </MudPaper>
+    <MudPaper Class="mb-10" Style="@($"color:background:{Colors.Shades.White};")" Elevation="0" Width="400px" Height="64px">
+        <MudTextField Class="rounded-pill flex-grow-1 gap-4" Style="@($"color:{Colors.Shades.White}; background:{Colors.Blue.Darken4};")"  @bind-Value="Search"  Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Dark" />
+    </MudPaper>
 </MudPaper>
-<MudPaper Class="rounded-pill d-flex justify-end " Width="300px" Height="60px" Elevation="0" >
-<MudTextField Class="rounded-pill" Style="@($"color:{Colors.Shades.White}; background:{Colors.Blue.Darken4};")"  @bind-Value="Search"  Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Dark" />
-</MudPaper>
-</div>
 
-
-<MudPaper Height="700px" Width="1050px" Class="pa-4" Style="@($"color:{Colors.Shades.Black}; background:{Colors.Grey.Lighten3};")">
+<MudPaper Height="700px" Width="1230px" Class="pa-4" Style="@($"color:{Colors.Shades.Black}; background:{Colors.Grey.Lighten3};")">
 <div class="d-flex" style="gap:3.6rem" >
 <MudText Typo="Typo.h6" class= "pa-4 mr-7 "> Name </MudText>
 <MudText Typo="Typo.h6" class= "pa-3 ml-15 pl-16 "> Course </MudText>
