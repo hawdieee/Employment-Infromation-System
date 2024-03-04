@@ -170,7 +170,6 @@
   justify-content: space-between;
 }
 
-/* Email */
 .search-container {
   display: flex;
   align-items: center;
@@ -283,64 +282,31 @@ button i {
 .bin,
 .mail {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.2rem;
 }
 
-.message-content {
-  padding-top: 1.5rem;
-  background-color: #d9d9d9;
-  height: 50rem;
+.logincont {
+  width: 30rem;
+  height: 441px;
+  padding: 4rem 2rem;
 }
-.star-label {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  font-size: 24px; /* Adjust as needed */
-  color: #ccc; /* Default star color */
-  cursor: pointer;
-}
-.baliktad {
-  rotate: 90deg;
-  font-size: 1.4rem;
-}
-
-/* Hide the actual checkbox */
-input[id="star-checkbox"] {
-  display: none;
+.login .logbox {
+  background: rgb(46, 127, 211);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 127, 211, 1) 30%,
+    rgba(46, 127, 211, 1) 49%,
+    rgba(237, 242, 247, 1) 98%
+  );
+  margin: 6rem 4rem;
+  border-radius: 1.5rem;
 }
 
-/* Style the checkbox when checked */
-input[type="checkbox"]:checked + .star-label i {
-  color: #ffd700; /* Change to desired filled star color */
-}
-.check {
-  width: 20px;
-  height: 20px;
-}
-.msg-content {
-  display: flex;
-  align-items: center;
-  justify-content: safe center;
-  font-size: 1.4rem;
-  gap: 4rem;
-}
-.message-content {
-  overflow: scroll;
-  height: 500px;
-}
-
-.star {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.msg-inbox {
-  background-color: #b9b6b6;
-  margin: 0.5rem 0;
-  padding: 0 2rem;
+.login .login__wrapper {
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 45rem;
+  border-radius: 2rem;
 }
 /* DASHBOARD - ADMIN */
 
@@ -616,3 +582,306 @@ input[type="checkbox"]:checked + .star-label i {
   height: 45rem;
   border-radius: 2rem;
 }
+/* Email */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 5px;
+  background-color: #1667ba;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: #1667ba;
+  color: white;
+}
+
+.search-button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+.search-input::placeholder {
+  color: white;
+}
+
+/* .firstcont .search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  background-color: #1667ba;
+  padding: 0.2rem 1rem;
+  width: 25rem;
+}
+.firstcont .search input {
+  background-color: #1667ba;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+button i {
+  color: white;
+} */
+.firstcont h1 {
+  color: #1667ba;
+}
+.compose {
+  padding: 1.5rem 0;
+}
+.comp-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  padding: 0.2rem 3rem;
+  background-color: #1667ba;
+  width: 18rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+.comp-title i {
+  font-size: 1.5rem;
+}
+
+.inbox .textbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.35rem;
+}
+.inbox .inbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1667ba;
+  padding: 0.5rem 1.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: white;
+}
+.number p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.subheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding-top: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #bccdde;
+}
+.subheader .imp i {
+  rotate: 90deg;
+}
+.subheader .sent,
+.imp,
+.spam,
+.bin,
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.message-content {
+  padding-top: 1.5rem;
+  background-color: #d9d9d9;
+  height: 50rem;
+}
+.star-label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 24px; /* Adjust as needed */
+  color: #ccc; /* Default star color */
+  cursor: pointer;
+}
+.baliktad {
+  rotate: 90deg;
+  font-size: 1.4rem;
+}
+
+/* Hide the actual checkbox */
+input[id="star-checkbox"] {
+  display: none;
+}
+
+/* Style the checkbox when checked */
+input[type="checkbox"]:checked + .star-label i {
+  color: #ffd700; /* Change to desired filled star color */
+}
+.check {
+  width: 20px;
+  height: 20px;
+}
+.msg-content {
+  display: flex;
+  align-items: center;
+  justify-content: safe center;
+  font-size: 1.4rem;
+  gap: 4rem;
+}
+.message-content {
+  overflow: scroll;
+  height: 500px;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.msg-inbox {
+  background-color: #b9b6b6;
+  margin: 0.5rem 0;
+  padding: 0 2rem;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+/* NYLECO STYLE */
+---Header Button---
+.btn {
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Style the active class (and buttons on mouse-over) */
+  .active, .btn:hover {
+    background-color: #05488D;
+    color: white;
+  }
+  .mud-tabs-toolbar-content{
+    place-content: center;
+    display: flex;
+  }
+  .mud-input>input.mud-input-root-outlined{
+   color: black;
+   z-index: 1;
+  }
+
+  .mud-elevation-1{
+    box-shadow: none;
+  }
+
+  /* Job Description text area*/
+  .Jobdes textarea{  
+    /* box-sizing: padding-box; */
+    overflow:hidden;
+    /* demo only: */
+    padding:1rem;
+    width: 515px;
+    height: 100px;
+    font-size:14px;
+    margin-top: .8rem;
+    display:block;
+    border-radius:5px;
+    border:1px solid #808080;
+  }
+
+ .mud-button-label span {
+    display:none;
+}
+/* badang */
+.left1,
+.right1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 25rem;
+  padding: 1rem 2rem;
+  background-color: #027f28;
+  border-radius: 0.7rem;
+  color: white;
+}
+/* search badang */
+.search-container1 {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border: 1px solid #cccccc;
+    border-radius: 1rem;
+    padding: 5px;
+    background-color: #1667ba;
+  }
+  
+  .search-input1 {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: #1667ba;
+    color: white;
+  }
+  
+  .search-button1 {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-button1:hover {
+    background-color: #0056b3;
+  }
+  .search-input1::placeholder
+  {
+    color: white;
+  }

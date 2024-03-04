@@ -1,1 +1,242 @@
 @page "/UserApplied"
+<MudPaper Class="d-flex justify-space-between flex-grow-1 gap-4" Elevation="0">
+    <MudPaper Elevation="0" Width="500px" Height="64px">
+    <MudText Typo="Typo.h3" style= "color:blue"> User Applied </MudText>
+    </MudPaper>
+    <MudPaper Class="mb-10" Style="@($"color:background:{Colors.Shades.White};")" Elevation="0" Width="400px" Height="64px">
+        <MudTextField Class="rounded-pill flex-grow-1 gap-4" Style="@($"color:{Colors.Shades.White}; background:{Colors.Blue.Darken4};")"  @bind-Value="Search"  Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Dark" />
+    </MudPaper>
+</MudPaper>
+
+<MudPaper Height="700px" Width="1230px" Class="pa-4" Style="@($"color:{Colors.Shades.Black}; background:{Colors.Grey.Lighten3};")">
+<div class="d-flex" style="gap:3.6rem" >
+<MudText Typo="Typo.h6" class= "pa-4 mr-7 "> Name </MudText>
+<MudText Typo="Typo.h6" class= "pa-3 ml-15 pl-16 "> Course </MudText>
+<MudText Typo="Typo.h6" class= "pa-3 ml-16 pl-16 "> Email </MudText>
+<MudText Typo="Typo.h6" class= "pa-3 ml-16 pl-16 "> Contact Number </MudText>
+</div>
+<div id="another_unique_identifier" class="ma-0" style="height:580px;overflow: auto;">
+    <MudPaper Elevation="0" Height="700px" Class="d-flex flex-column pa-5 py-6" Style="@($"color:{Colors.Shades.Black}; background:{Colors.Grey.Lighten3};")">
+      <div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Arjay Federio </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-16"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> arjayfederio@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-14"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > John Chris Velasco </MudText>
+<MudText Typo="Typo.h6" class= "ml-14"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Chrisvelasco@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Adrian Homoroc </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-9"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> adrihomoroc@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Nyleco Anuran </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-13"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Nyleanuran@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-15"> 09090912345 </MudText>
+</div>
+
+       <div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Arjay Federio </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-16"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> arjayfederio@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-14"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > John Chris Velasco </MudText>
+<MudText Typo="Typo.h6" class= "ml-14"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Chrisvelasco@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Adrian Homoroc </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-9"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> adrihomoroc@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Nyleco Anuran </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-13"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Nyleanuran@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-15"> 09090912345 </MudText>
+</div>
+
+      <div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Arjay Federio </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-16"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> arjayfederio@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-14"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > John Chris Velasco </MudText>
+<MudText Typo="Typo.h6" class= "ml-14"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Chrisvelasco@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Adrian Homoroc </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-9"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> adrihomoroc@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Nyleco Anuran </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-13"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Nyleanuran@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-15"> 09090912345 </MudText>
+</div>
+
+      <div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Arjay Federio </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-16"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> arjayfederio@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-14"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > John Chris Velasco </MudText>
+<MudText Typo="Typo.h6" class= "ml-14"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Chrisvelasco@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Adrian Homoroc </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-9"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> adrihomoroc@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Nyleco Anuran </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-13"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Nyleanuran@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-15"> 09090912345 </MudText>
+</div>
+
+      <div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Arjay Federio </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-16"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> arjayfederio@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-14"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > John Chris Velasco </MudText>
+<MudText Typo="Typo.h6" class= "ml-14"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Chrisvelasco@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Adrian Homoroc </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-9"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> adrihomoroc@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-12"> 09090912345 </MudText>
+</div>
+
+<div class="d-flex">
+<MudAvatar Class="mb-5">
+    <MudImage Src="images/profilepic2.png"></MudImage>
+</MudAvatar>
+<MudText Typo="Typo.h6" class="ml-2" > Nyleco Anuran </MudText>
+<MudText Typo="Typo.h6" class= "ml-12 pl-13"> BSCS </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-16"> Nyleanuran@gmail.com </MudText>
+<MudText Typo="Typo.h6" class= "ml-16 pl-15"> 09090912345 </MudText>
+</div>
+
+        <MudScrollToTop TopOffset="100" Selector="#another_unique_identifier" Style="z-index:2001;">
+            <div class="mud-theme-secondary px-3 py-6 mud-elevation-16 rounded-xl fixed" style="bottom:20px;left:20px;">Scroll to top custom button</div>
+        </MudScrollToTop>
+    </MudPaper>
+</div>
+
+
+
+</MudPaper>
+
+
+
+
+
+
+
+@code {
+    private MudTheme Theme = new MudTheme();
+
+    public string Search { get; set;}
+
+    public string Disabled { get; set; }
+}
