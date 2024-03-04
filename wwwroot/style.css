@@ -1,185 +1,178 @@
 .file-upload {
-    display: inline-block;
-    color: #fff;
-    border: 1px solid black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    border-radius: 25px;
+  display: inline-block;
+  color: #fff;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 25px;
 }
 
-
 .fas.fa-upload {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 #file-list {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .mud-tab.mud-tab-active {
-    color: #800000;
-    font-weight:bold;
+  color: #800000;
+  font-weight: bold;
 }
-
 
 .mud-tab-slider {
-    background: #800000;;
+  background: #800000;
 }
-.skills{
-    position:relative;
+.skills {
+  position: relative;
 }
-.box-skills{
-    display:grid;
-    grid-template-columns:1fr 1fr;
+.box-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.hardskills{
-    padding-top:1.7rem;
-    margin-left:2rem;
-    h3{
-        color:black;
-    }
-    
+.hardskills {
+  padding-top: 1.7rem;
+  margin-left: 2rem;
+  h3 {
+    color: black;
+  }
 }
-.hardskills img{
-    position:absolute;
-    left:3rem;
-    height:3rem;
+.hardskills img {
+  position: absolute;
+  left: 3rem;
+  height: 3rem;
 }
-.hardskills .img2{
-    position:absolute;
-    left:19.3rem;
-    height:3rem;
+.hardskills .img2 {
+  position: absolute;
+  left: 19.3rem;
+  height: 3rem;
 }
-.HS .content-bullet ul li{
-   list-style: circle;
+.HS .content-bullet ul li {
+  list-style: circle;
 }
-.HS .content-bullet{
-    padding-top:1rem;
-    margin-left:4rem;
+.HS .content-bullet {
+  padding-top: 1rem;
+  margin-left: 4rem;
 }
-
 
 /* ---------WORK EXPERIENCE--------- */
 
-.icon{
-    display:flex;
-    align-items:center;
-    justify-content:end;
-    margin-right:1.5rem;
-    padding-bottom:.7rem;
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 1.5rem;
+  padding-bottom: 0.7rem;
 }
-.icon a{
-    padding-right:.3rem;
-    font-size:.8rem;
-    color:black;
-    padding:.4rem;
-    background:green;
-    color:white;
-    border-radius:2rem;
-    
+.icon a {
+  padding-right: 0.3rem;
+  font-size: 0.8rem;
+  color: black;
+  padding: 0.4rem;
+  background: green;
+  color: white;
+  border-radius: 2rem;
 }
-.experience{
-    overflow:scroll;
-    max-height:40rem;
-    max-width:38rem;
-    margin-right:-.3rem;
-    padding-top:1.5rem;
-    scroll-behavior:smooth;
+.experience {
+  overflow: scroll;
+  max-height: 40rem;
+  max-width: 38rem;
+  margin-right: -0.3rem;
+  padding-top: 1.5rem;
+  scroll-behavior: smooth;
 }
-.exp .title{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom:.7rem;
-    margin-right:4rem;
+.exp .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.7rem;
+  margin-right: 4rem;
 }
 
 /* --------My Application------- */
 
 .mud-tabs.mud-tabs-rounded .mud-tabs-panels {
-    border-radius: var(--mud-default-borderradius);
-    height: 40rem;
+  border-radius: var(--mud-default-borderradius);
+  height: 40rem;
 }
 /* .boxcontent{
     overflow:scroll;
     max-height:38rem;
 } */
-.content{
-    padding-top:.5rem;
-    border-top:2px solid black;
-    padding-bottom:1rem;
-    margin-right:1rem;
-   
+.content {
+  padding-top: 0.5rem;
+  border-top: 2px solid black;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
 }
-.applications, .applied{
-    padding-top:.5rem;
-    padding-bottom:1rem;
-    max-height:37rem;
-    overflow:scroll;
-    
+.applications,
+.applied {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  max-height: 37rem;
+  overflow: scroll;
 }
-.applications .title, .applied .title {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;  
-}
-.applications .title .left, .applied .title .left{
-    display:flex;
-    align-items:center;
-    gap:1rem;
-}
-.applications .title .right, .applied .title .right{
-    display:flex;
-    align-items:center;
-    gap:1rem;
-}
-.applications .title .right .saved{
-    color:green;
-}
-.applications .title .left i, .applied .title .left i{
-    font-size:2rem;
-}
-.applications .title .left h3, .applied  .title .left h3{
-    font-size:1.5rem;
-    font-weight:bold;
-    color:#05488D;
-}
-
-.applications .subtitle, .applied .subtitle{
-    margin-left:2.4rem;
-    padding-top:.5rem;
-}
-.applied .status p{
-    color: blue;
-    border-radius:5px;
-}
-
- .mud-button-label span {
-    display:none;
-}
-/* badang */
-.kaliwa,
-.kanan {
+.applications .title,
+.applied .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
-  width: 25rem;
-  padding: 1rem 2rem;
-  background-color: #027f28;
-  border-radius: 0.7rem;
-  color: white;
 }
-/* search badang */
-.search-container {
+.applications .title .left,
+.applied .title .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.applications .title .right,
+.applied .title .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.applications .title .right .saved {
+  color: green;
+}
+.applications .title .left i,
+.applied .title .left i {
+  font-size: 2rem;
+}
+.applications .title .left h3,
+.applied .title .left h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #05488d;
+}
+
+.applications .subtitle,
+.applied .subtitle {
+  margin-left: 2.4rem;
+  padding-top: 0.5rem;
+}
+.applied .status p {
+  color: blue;
+  border-radius: 5px;
+}
+
+.mud-button-label span {
+  display: none;
+}
+
+.firstcont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .search-container {
     display: flex;
     align-items: center;
     width: 350px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 1rem;
     padding: 5px;
     background-color: #1667ba;
@@ -205,7 +198,746 @@
   .search-button:hover {
     background-color: #0056b3;
   }
-  .search-input::placeholder
+  .search-input::placeholder {
+    color: white;
+  } */
+
+  
+
+/* LOGIN */
+
+.loginflex {
+  display: flex;
+}
+
+.logincont {
+  width: 30rem;
+  height: 441px;
+  padding: 4rem 2rem;
+}
+.login .logbox {
+  background: rgb(46, 127, 211);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 127, 211, 1) 30%,
+    rgba(46, 127, 211, 1) 49%,
+    rgba(237, 242, 247, 1) 98%
+  );
+  margin: 6rem 4rem;
+  border-radius: 1.5rem;
+}
+
+.login .login__wrapper {
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 45rem;
+  border-radius: 2rem;
+}
+/* DASHBOARD - ADMIN */
+
+.dash-title {
+  color: #1667ba;
+  padding-bottom: 2rem;
+}
+.dash-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.right .text h2,
+.left .text h2 {
+  padding-bottom: 0.5rem;
+}
+.right .text p,
+.left .text p {
+  font-size: 1.5rem;
+}
+
+.right,
+.left .text {
+  text-align: end;
+}
+.dash-cont .left,
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 45rem;
+  padding: 1rem 2rem;
+  background-color: #027f28;
+  border-radius: 0.7rem;
+  color: white;
+}
+.dash-cont .left .files i,
+.right .files i {
+  font-size: 2.2rem;
+}
+
+.dash-cont .right {
+  background-color: #1667ba;
+}
+
+.main-content {
+  padding-top: 1.5rem;
+}
+.main-content .review {
+  padding-top: 1rem;
+  width: 27rem;
+  background-color: #d9d9d9;
+  border-radius: 0.3rem;
+}
+.main-content .review h1 {
+  margin-left: 1rem;
+}
+.review i {
+  font-size: 3.5rem;
+}
+.main-content .boxcompany {
+  background-color: #6f91b3;
+  border-radius: 0.3rem;
+  padding-bottom: 1rem;
+}
+.review .company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+}
+.review .company-details p {
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  align-items: start;
+  gap: 4rem;
+}
+.reco {
+  width: 60%;
+}
+.reco-title h1 {
+  padding: 0.5rem 0;
+  margin-bottom: 0.2rem;
+}
+.recoheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+}
+.recoheader .icon i {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+.reco-start {
+  padding: 1rem 0;
+}
+.reco-start h3 {
+  color: #1667ba;
+}
+.reco-start p {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+.recomendedjob {
+  background-color: #d9d9d9;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.job-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+  padding: 1rem 0;
+}
+
+.job-details h3 {
+  background-color: #1667ba;
+  color: white;
+  padding: 0.2rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.job-details p {
+  font-weight: bolder;
+  color: #1667ba;
+}
+.slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.slot .company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1rem;
+  padding: 1.5rem;
+  background-color: #d9d9d9;
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+.slot .company h2 {
+  color: #1667ba;
+}
+.slot .company P {
+  font-weight: BOLD;
+}
+.slot .company i {
+  font-size: 3rem;
+}
+
+/* Search Job */
+
+.searchjob-title h1 {
+  color: #1667ba;
+}
+.jobresults h1 {
+  padding-bottom: 2rem;
+}
+.jobcard .recomendedjob {
+  width: 35rem;
+}
+.jobcard .recomendedjob .icon i {
+}
+.jobcard {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, 1fr);
+  overflow: scroll;
+  scroll-behavior: smooth;
+  height: 35rem;
+}
+/* 
+.footer {
+  background-color: #800000;
+}
+.footer p {
+  text-align: center;
+  padding: 1rem 0;
+  color: white;
+} */
+
+/* LOGIN */
+.logincont {
+  width: 30rem;
+  height: 441px;
+  padding: 4rem 2rem;
+}
+.login .logbox {
+  background: rgb(46, 127, 211);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 127, 211, 1) 30%,
+    rgba(46, 127, 211, 1) 49%,
+    rgba(237, 242, 247, 1) 98%
+  );
+  margin: 6rem 4rem;
+  border-radius: 1.5rem;
+}
+
+.login .login__wrapper {
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 45rem;
+  border-radius: 2rem;
+}
+
+.rightcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightcont h3 {
+  font-size: 2rem;
+  max-width: 40rem;
+  margin-right: 2rem;
+  color: #05488d;
+}
+.rightcont p {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  max-width: 40rem;
+  margin-right: 2rem;
+}
+
+/* LOGIN */
+
+.loginflex {
+  display: flex;
+}
+
+.logincont {
+  width: 30rem;
+  height: 441px;
+  padding: 4rem 2rem;
+}
+.login .logbox {
+  background: rgb(46, 127, 211);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 127, 211, 1) 30%,
+    rgba(46, 127, 211, 1) 49%,
+    rgba(237, 242, 247, 1) 98%
+  );
+  margin: 6rem 4rem;
+  border-radius: 1.5rem;
+}
+
+.login .login__wrapper {
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 45rem;
+  border-radius: 2rem;
+}
+/* Email */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 5px;
+  background-color: #1667ba;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: #1667ba;
+  color: white;
+}
+
+.search-button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+.search-input::placeholder {
+  color: white;
+}
+
+/* .firstcont .search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  background-color: #1667ba;
+  padding: 0.2rem 1rem;
+  width: 25rem;
+}
+.firstcont .search input {
+  background-color: #1667ba;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+button i {
+  color: white;
+} */
+.firstcont h1 {
+  color: #1667ba;
+}
+.compose {
+  padding: 1.5rem 0;
+}
+.comp-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  padding: 0.2rem 3rem;
+  background-color: #1667ba;
+  width: 18rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+.comp-title i {
+  font-size: 1.5rem;
+}
+
+.inbox .textbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.35rem;
+}
+.inbox .inbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1667ba;
+  padding: 0.5rem 1.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: white;
+}
+.number p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.subheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding-top: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #bccdde;
+}
+.subheader .imp i {
+  rotate: 90deg;
+}
+.subheader .sent,
+.imp,
+.spam,
+.bin,
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.message-content {
+  padding-top: 1.5rem;
+  background-color: #d9d9d9;
+  height: 50rem;
+}
+.star-label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 24px; /* Adjust as needed */
+  color: #ccc; /* Default star color */
+  cursor: pointer;
+}
+.baliktad {
+  rotate: 90deg;
+  font-size: 1.4rem;
+}
+
+/* Hide the actual checkbox */
+input[id="star-checkbox"] {
+  display: none;
+}
+
+/* Style the checkbox when checked */
+input[type="checkbox"]:checked + .star-label i {
+  color: #ffd700; /* Change to desired filled star color */
+}
+.check {
+  width: 20px;
+  height: 20px;
+}
+.msg-content {
+  display: flex;
+  align-items: center;
+  justify-content: safe center;
+  font-size: 1.4rem;
+  gap: 4rem;
+}
+.message-content {
+  overflow: scroll;
+  height: 500px;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.msg-inbox {
+  background-color: #b9b6b6;
+  margin: 0.5rem 0;
+  padding: 0 2rem;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+/* NYLECO STYLE */
+---Header Button---
+.btn {
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Style the active class (and buttons on mouse-over) */
+  .active, .btn:hover {
+    background-color: #05488D;
+    color: white;
+  }
+  .mud-tabs-toolbar-content{
+    place-content: center;
+    display: flex;
+  }
+  .mud-input>input.mud-input-root-outlined{
+   color: black;
+   z-index: 1;
+  }
+
+  .mud-elevation-1{
+    box-shadow: none;
+  }
+
+  /* Job Description text area*/
+  .Jobdes textarea{  
+    /* box-sizing: padding-box; */
+    overflow:hidden;
+    /* demo only: */
+    padding:1rem;
+    width: 515px;
+    height: 100px;
+    font-size:14px;
+    margin-top: .8rem;
+    display:block;
+    border-radius:5px;
+    border:1px solid #808080;
+  }
+
+<<<<<<< HEAD
+ .mud-button-label span {
+    display:none;
+}
+/* badang */
+.left1,
+.right1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 25rem;
+  padding: 1rem 2rem;
+  background-color: #027f28;
+  border-radius: 0.7rem;
+  color: white;
+}
+/* search badang */
+.search-container1 {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border: 1px solid #cccccc;
+    border-radius: 1rem;
+    padding: 5px;
+    background-color: #1667ba;
+  }
+  
+  .search-input1 {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: #1667ba;
+    color: white;
+  }
+  
+  .search-button1 {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-button1:hover {
+    background-color: #0056b3;
+  }
+  .search-input1::placeholder
   {
     color: white;
   }
+=======
+    /* Messages */
+    .Messages{
+        border-bottom: 1px solid black;
+    }
+/* Profile page*/
+.Profile .mud-select{
+  width: 60%;
+}
+.profile__header {
+    overflow: hidden;
+    padding: 1.2rem;
+    
+  }
+  
+  .profile__header .search {
+    float: right;
+  }
+  
+  .profile__header input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    background-color:#1667ba;
+    color: white;
+    padding: 0.5rem 6rem;
+    padding-left: 1rem;
+  }
+  .profile__header input::placeholder {
+   color: white;
+  }
+  
+  .profile__header .search button {
+    float: right;
+    padding: 11.5px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #1667ba;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .profile__header .search button:hover {
+    background: #027F28;
+  }
+
+    /* COMPANIES*/
+  .companies .findjob_btn .button{
+    background-color: #027F28;
+    color: white;
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+  }
+  
+  .companies input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    background-color:#D9D9D9;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 6rem;
+    padding-left: 2rem;
+    width: 80%;
+    border-radius: 2rem;
+  }
+  .companies input::placeholder {
+   color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .companies_search {
+    display: flex;
+    place-content: center;
+  }
+
+  .companies .findjob_btn {
+    display: flex;
+    place-content: center;
+    margin-top: 1rem;
+  }
+  .companies .nameofcompany{
+    text-align: center;
+  }
+  .companies .nameofcompany img{
+    width: 5rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 2rem;
+    place-content: center;
+  }
+  .grid-item {
+    background-color: #D9D9D9;
+    padding: 20px;
+    text-align: center;
+    width: 20rem;
+    border-radius: 1rem;
+    
+  }
+
+
+  /* Empolyer page*/
+  .employer .employer__title{
+    h1{
+      font-size: 2rem;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.rightcont p {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  max-width: 40rem;
+  margin-right: 2rem;
+}
+>>>>>>> fa637f7d7681c14287404c5f66b813a5f1730804

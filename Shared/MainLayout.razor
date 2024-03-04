@@ -12,15 +12,15 @@
                     <MudImage Src="Images/Logo.png"/>
                 </div>
        
-        <div class="head d-flex gap-8 pl-15" style="margin-left: 5rem; ">
-                <MudButton Class="mud-info "  Style="@($"color:{Colors.Shades.White}")">
-                    <MudText Typo="Typo.h6" Style="padding: 1px 12px">Home</MudText>
+        <div class="d-flex gap-8 pl-15" style="margin-left: 5rem;" id="tryhead">
+                <MudButton Href="/Homepage"   Style="@($"color:{Colors.Shades.Black}")">
+                    <MudText Typo="Typo.h6" Class="btn active"  Style="padding: 1px 12px">Home</MudText>
                 </MudButton>
                 <MudButton Href="/MA-aboutme" Style="@($"color:{Colors.Shades.Black}")">
-                    <MudText Typo="Typo.h6" Style="padding: 1px 12px">My Account</MudText>
+                    <MudText Typo="Typo.h6" Class="btn"  Style="padding: 1px 12px">My Account</MudText>
                 </MudButton>
                  <MudButton Href="/EmployerJob" Style="@($"color:{Colors.Shades.Black}")">
-                    <MudText Typo="Typo.h6" Style="padding: 1px 12px">Employer/Post Job</MudText>
+                    <MudText Typo="Typo.h6" Class="btn" Style="padding: 1px 12px">Employer/Post Job</MudText>
                 </MudButton>
         </div>
         <MudSpacer />
@@ -157,21 +157,28 @@
                 </div>
 
                      @* -----LOGOUT BUTTON-----*@
-                    <MudButton Variant="Variant.Filled"  Style="@($"color:{Colors.Shades.Black}")" OnClick="OnButtonClicked3"> 
+                    <MudButton Variant="Variant.Filled" OnClick="OnButtonClicked3" style="margin-left: .5rem;"> 
                         <MudText Typo ="Typo.h6"> Logout</MudText>
                     </MudButton>
                         <MudMessageBox @ref="mbox2">
                             <MessageContent>
                                 <div>
                                     <h1>Are you sure?</h1>
-                                    <div>
+                                    @* <div>
                                         <div class="mt-4 d-flex gap-4" style="place-content: center;">
                                                 <MudButton Variant="Variant.Filled" Color="Color.Info"  Size="Size.Medium" Style="background-color: #3E0202; color: white;  padding: .5rem 2rem;">No</MudButton>
                                                 <MudButton Variant="Variant.Filled" Color="Color.Info"  Size="Size.Medium" Style="background-color: #027F28; color: white; padding: .5rem 2rem;">Yes</MudButton>
                                         </div>
-                                    </div>
+                                    </div> *@
                                 </div>
                             </MessageContent>
+                            <YesButton>
+                                <div class="d-flex gap-6" style="margin-left: -11.2rem; margin-bottom: .5rem;">
+                                    <MudButton Variant="Variant.Filled" Style="background-color: #3E0202; color: #ffffff; font-weight:600;">NO</MudButton>
+                                    <MudButton Variant="Variant.Filled" Style="background-color: #027F28; color: #ffffff; font-weight:600;">YES</MudButton>
+                                </div>
+                                
+                            </YesButton>
                         </MudMessageBox>
 
                     @code
@@ -210,6 +217,8 @@
         _drawerOpen = !_drawerOpen;
     }
 }
-
+    <footer  style="background-color: #800000; padding: .5rem 1rem; color: white; margin-top: 2rem;">
+        <p class="d-flex" style="place-content: center;">Laguna State Polytechnic University © Copyright 2022 - 2023. All Rights Reserved.</p>
+    </footer>
 
 <script src="script.js"></script>

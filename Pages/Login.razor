@@ -2,29 +2,37 @@
 @using System.ComponentModel.DataAnnotations
 
 
-<MudPaper Elevation="10" Height="750px" Width="110%">
-    <MudContainer Fixed="true">
-        <MudPaper Class="rounded" Elevation="10" Height="650px" Width="650px" Square="true">
-               <div class="d-flex justify-end">
-               <MudImage Src="Images/jobs.png" Width="200" Height="150" Alt="Swedish Farm House" Elevation="0" Class="rounded-lg mt-15 ml-3"/>
-               <MudText Class="  pt-15 mr-13 mt-8" Typo="Typo.h1">LSPU-EIS</MudText>
-               </div>
-               <MudText Class="d-flex justify-end mr-9 pb-15" Typo="Typo.caption">Laguna State Polytechnic University Employment Information System</MudText>
-                <div class="pb-15 px-16 d-flex flex-column gap-4">
-                <MudTextField  @bind-Value="Username" Label="Username" Variant="Variant.Text"></MudTextField>
-                <MudTextField  @bind-Value="Password" Label="Password" Variant="Variant.Text" InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="ButtonTestclick" AdornmentAriaLabel="Show Password" />
+<div class="login">
+    <div class="container">
+        <div class="login__wrapper">
+            <div class="loginflex">
+            <MudPaper Class="logbox" Height="450px" Width="550px" >
+                <div class="logo"> 
+                    <img src="Images/LSPU.png" alt="" style="padding-top:2rem;">
+                </div>
+                <div class=" mx-10 my-5  d-flex flex-column gap-4">
+                <MudTextField  @bind-Value="Username" Label="Username" Variant="Variant.Text" style="color:white;"></MudTextField>
+                <MudTextField  @bind-Value="Password" Label="Password" Variant="Variant.Text" style=""  InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="ButtonTestclick" AdornmentAriaLabel="Show Password" />
                 <MudButton Variant="Variant.Text">Forgot Password?</MudButton>
                 </div>
-                <div class="d-flex align-center flex-column-1 flex-grow-1 gap-4 ml-15 pl-15 ">
-                    <MudButton Class="ml-15 " Variant="Variant.Filled" Color="Color.Primary" 
+                <div class="d-flex align-center gap-10 justify-center ">
+                    <MudButton Class=" " Variant="Variant.Filled" Color="Color.Primary" 
                      Style="@($" background:{Colors.Green.Default};")">SIGN UP</MudButton>
-                    <MudButton Class="ml-15 justify-end " Variant="Variant.Filled" Color="Color.Primary"
+                    <MudButton Class=" justify-end " Variant="Variant.Filled" Color="Color.Primary"
                     Style="@($" background:{Colors.Blue.Lighten1};")">LOGIN</MudButton>
                 </div>
         </MudPaper> 
-                
-    </MudContainer>
-</MudPaper>
+                <div class="rightcont"> 
+                    <h3>Empowering Alumni Success: Your Path to Professional Excellence Through Our Employment System</h3>
+                    <p>Our dedicated alumni job portal provides a seamless platform to help you quickly connect with job opportunities and effortlessly navigate your way to a successful career.</p>
+                </div>
+            
+        
+       
+        </div>
+        </div>
+    </div>
+</div>
 
 @code {
     public string Username { get; set; }

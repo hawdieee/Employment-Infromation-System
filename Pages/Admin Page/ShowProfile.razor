@@ -1,0 +1,143 @@
+@page "/ShowProfile"
+
+<PageTitle>Show Profile</PageTitle>
+
+<div class="profile__header d-flex justify-space-between">
+    <h1 style="color: #1667BA;">Profile</h1>
+        <div class="search">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </div>
+</div>
+
+<MudGrid>
+    <MudItem xs="6" sm="4">
+        <MudPaper>
+            <div>
+                <div style="background-color: #D9D9D9; padding: 2rem 6rem; text-align: center;  border-radius: 25px 25px 0px  0px;">
+                    @* -----USER PROFILE----- *@
+                    <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 80%;"/>
+                    <h1 style="color: #1667BA; font-size: 2rem;">Nyleco-J</h1>
+                    <p style="color: #646363; font-size: 1rem;">Programmer</p>
+                </div>
+            @* -----RECENT VIEW----- *@
+            <div style="background-color: rgba(5, 72, 141, 0.5); border-radius: 0px 0px 25px 25px; ">
+                    <h1 style="padding: .5rem; color: #000000;">Recent View</h1>
+                    <div style="display: flex; padding: 0rem 2.5rem; place-items: center; gap: .5rem;">
+                        <MudIcon Icon="@Icons.Material.Filled.Computer" Style="font-size: 6rem; color: #000000;"/>
+                        <div>
+                            <p style="font-size: 1.3rem; font-weight: 600; color: #000000;">Company name</p>
+                            <p style="font-size: 1rem; font-weight: 600; color: white;">1 day</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; padding: 0rem 2.5rem; place-items: center; gap: .5rem;">
+                        <MudIcon Icon="@Icons.Material.Filled.Computer" Style="font-size: 6rem; color: #000000;"/>
+                        <div>
+                            <p style="font-size: 1.3rem; font-weight: 600; color: #000000;">Company name</p>
+                            <p style="font-size: 1rem; font-weight: 600; color: white;">1 day</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; padding: 0rem 2.5rem; place-items: center; gap: .5rem;">
+                        <MudIcon Icon="@Icons.Material.Filled.Computer" Style="font-size: 6rem; color: #000000;"/>
+                        <div>
+                            <p style="font-size: 1.3rem; font-weight: 600; color: #000000;">Company name</p>
+                            <p style="font-size: 1rem; font-weight: 600; color: white;">1 day</p>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </MudPaper>
+    </MudItem>
+    <MudItem xs="10" sm="8">
+        @* -----RECOMMEND JOBS----- *@
+        <MudPaper>
+            <h1 style="color: #000000; font-size: 2rem;">Recommend Jobs</h1>
+            <div style="background-color: #D9D9D9; padding: 1.2rem 1rem; margin-bottom: 2rem; border-radius: 1rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                    <div>
+                        <h2 style="color: #1667BA; font-size: 1.5rem;">Company name</h2>
+                        <h1 style="color: #000000; font-size: 2rem;">Web Developer</h1>
+                    </div>
+                        <MudImage Src="Images/Companyname_logo.png" Style="width: 10%"/>
+                </div>
+                <p style="max-width: 45rem; font-size: 1rem; margin-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis est dui, vitae convallis sem fringilla quis. Nullam lobortis facilisis tincidunt. In malesuada nunc est, sit amet mattis eros vehicula id. mmodo ipsum non, finibus quam.</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 3rem;">
+                    <div>
+                        <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #05488D; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Full Time</p></MudButton>
+                    </div>
+                    <p style="color: #1667BA; font-size: 1.2rem; font-weight: 600;">Los Angeles</p>
+                </div>
+            </div>
+            <div style="background-color: #D9D9D9; padding: 1.1rem 1rem; border-radius: 1rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; ">
+                    <div>
+                        <h2 style="color: #1667BA; font-size: 1.5rem;">Company name</h2>
+                        <h1 style="color: #000000; font-size: 2rem;">Web Developer</h1>
+                    </div>
+                        <MudImage Src="Images/Companyname_logo.png" Style="width: 10%"/>
+                </div>
+                <p style="max-width: 45rem; font-size: 1rem; margin-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis est dui, vitae convallis sem fringilla quis. Nullam lobortis facilisis tincidunt. In malesuada nunc est, sit amet mattis eros vehicula id. mmodo ipsum non, finibus quam.</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 3rem;">
+                    <div>
+                        <MudButton Variant="Variant.Filled" Color="Color.Info"  Style="background-color: #05488D; color: white; border-radius: .5rem; padding: 0rem 2rem;"><p style="font-weight: 600; font-size: 1.2rem; text-transform: capitalize;">Full Time</p></MudButton>
+                    </div>
+                    <p style="color: #1667BA; font-size: 1.2rem; font-weight: 600;">Los Angeles</p>
+                </div>
+            </div>
+            
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+<MudGrid>
+    <MudItem xs="6">
+         @* -----JOB APPLIED----- *@
+        <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">
+            <div style="background-color: #D9D9D9; padding: 1.2rem 1rem; border-radius: 1rem;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; ">
+                        <div>
+                            <h1 style="color: #1667BA">Job Applied</h1>
+                            <h2 style="color: #000000">Web Developer</h2>
+                        </div>
+                        <MudImage Src="Images/Companyname_logo.png" Style="width: 10%"/>
+                    </div>
+                    <p style="padding: 1rem 0rem; border-bottom: 2px solid black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis est dui, vitae convallis sem fringilla quis. Nullam lobortis facilisis tincidunt.</p>
+                </div>
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; ">
+                        <div style="margin-top: 1rem;">
+                            <h2 style="color: #000000">Web Developer</h2>
+                        </div>
+                    </div>
+                    <p style="padding: 1rem 0rem; border-bottom: 2px solid black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis est dui, vitae convallis sem fringilla quis. Nullam lobortis facilisis tincidunt.</p>
+                </div>
+            </div>
+        </MudPaper>
+    </MudItem>
+     @* -----SAVED JOBS----- *@
+    <MudItem xs="6">
+        <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">
+            <div style="background-color: #D9D9D9; padding: 1.2rem 1rem; border-radius: 1rem;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; ">
+                        <div>
+                            <h1 style="color: #1667BA">Saved Jobs</h1>
+                            <h2 style="color: #000000">Web Developer</h2>
+                        </div>
+                        <MudImage Src="Images/Companyname_logo.png" Style="width: 10%"/>
+                    </div>
+                    <p style="padding: 1rem 0rem; border-bottom: 2px solid black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis est dui, vitae convallis sem fringilla quis. Nullam lobortis facilisis tincidunt.</p>
+                </div>
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; ">
+                        <div style="margin-top: 1rem;">
+                            <h2 style="color: #000000">Web Developer</h2>
+                        </div>
+                    </div>
+                    <p style="padding: 1rem 0rem; border-bottom: 2px solid black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis est dui, vitae convallis sem fringilla quis. Nullam lobortis facilisis tincidunt.</p>
+                </div>
+            </div>
+        </MudPaper>
+    </MudItem>
+</MudGrid>

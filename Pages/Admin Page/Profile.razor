@@ -1,1 +1,154 @@
 @page "/Profile"
+
+<PageTitle>Profile</PageTitle>
+
+<div class="profile__header d-flex justify-space-between">
+    <h1 style="color: #1667BA;">Profile</h1>
+        <div class="search">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </div>
+</div>
+
+
+<MudGrid style="overflow: scroll; scroll-behavior: smooth; height: 41.7rem;">
+    @* -----LEFT SIDE OF PROFILE----- *@
+    <MudItem xs="6">
+        <MudPaper Class="">
+                        <div class="Profile px-6 " style="margin-bottom: 2rem">
+                            <MudSelect T="string" Variant="Variant.Outlined" Label="Select Department" AnchorOrigin="Origin.BottomCenter">
+                                <MudSelectItem Value="@("CCS")" />
+                                <MudSelectItem Value="@("Engineering")" />
+                                <MudSelectItem Value="@("Tourism")" />
+                            </MudSelect>
+                                @code {
+                                    public class Pizza
+                                    {
+                                        public Pizza(string name)
+                                        {
+                                            Name = name;
+                                        }
+
+                                        public readonly string Name;
+
+                                        // Note: this is important so the MudSelect can compare pizzas
+                                        public override bool Equals(object o)
+                                        {
+                                            var other = o as Pizza;
+                                            return other?.Name == Name;
+                                        }
+
+                                        // Note: this is important too!
+                                        public override int GetHashCode() => Name?.GetHashCode() ?? 0;
+
+                                        // Implement this for the Pizza to display correctly in MudSelect
+                                        public override string ToString() => Name;
+                                    }
+                                }
+                        </div>
+                        
+                        <div>
+                            <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem; margin: auto;">
+                                <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                                <div>
+                                    <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                    <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem; margin: auto;  margin-top: 1rem;">
+                                <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                                <div>
+                                    <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                    <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem; margin: auto;  margin-top: 1rem;">
+                                <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                                <div>
+                                    <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                    <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem; margin: auto;  margin-top: 1rem;">
+                                <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                                <div>
+                                    <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                    <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem; margin: auto;  margin-top: 1rem;">
+                                <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                                <div>
+                                    <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                    <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem; margin: auto;  margin-top: 1rem;">
+                                <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                                <div>
+                                    <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                    <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+        </MudPaper>
+    </MudItem>
+
+    @* -----RIGHT SIDE OF PROFILE----- *@
+    <MudItem xs="6">
+        <MudPaper>
+                <div style="margin-top: 6rem;">
+                    <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem;">
+                        <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                            <div>
+                                <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                            </div>
+                    </div>
+
+                    <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem;  margin-top: 1rem;">
+                        <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                            <div>
+                                <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                            </div>
+                     </div>
+
+                    <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem;  margin-top: 1rem;">
+                        <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                            <div>
+                                <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                            </div>
+                    </div>
+
+                    <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem;  margin-top: 1rem;">
+                        <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                            <div>
+                                <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                            </div>
+                            </div>
+
+                    <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem;  margin-top: 1rem;">
+                        <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                            <div>
+                                <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                            </div>
+                    </div>
+
+                    <div class="d-flex align-center gap-3" style="background-color: #D9D9D9; padding: 1rem; width: 80%; border-radius: .8rem;  margin-top: 1rem;">
+                        <MudImage Src="Images/profilepic.png" style="border:5px solid white; border-radius:5rem; width: 15%;"/>
+                            <div>
+                                <h1 style="font-size: 1.5rem; font-weight: 800;">Nyleco-J L. Anuran</h1>
+                                <p style="color: #1667BA; font-size: 1rem;">Web Developer/Designer</p>
+                            </div>
+                    </div>
+                </div>
+            </MudPaper>
+    </MudItem>
+</MudGrid>  
+
+
