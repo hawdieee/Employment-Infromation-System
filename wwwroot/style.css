@@ -133,6 +133,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  background: none;
+  width: 0;
 }
 .applications .title .right .saved {
   color: green;
@@ -168,6 +170,7 @@
   justify-content: space-between;
 }
 
+/* Email */
 .search-container {
   display: flex;
   align-items: center;
