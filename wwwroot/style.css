@@ -161,3 +161,51 @@
  .mud-button-label span {
     display:none;
 }
+/* badang */
+.kaliwa,
+.kanan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 25rem;
+  padding: 1rem 2rem;
+  background-color: #027f28;
+  border-radius: 0.7rem;
+  color: white;
+}
+/* search badang */
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border: 1px solid #cccccc;
+    border-radius: 1rem;
+    padding: 5px;
+    background-color: #1667ba;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: #1667ba;
+    color: white;
+  }
+  
+  .search-button {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  .search-input::placeholder
+  {
+    color: white;
+  }
